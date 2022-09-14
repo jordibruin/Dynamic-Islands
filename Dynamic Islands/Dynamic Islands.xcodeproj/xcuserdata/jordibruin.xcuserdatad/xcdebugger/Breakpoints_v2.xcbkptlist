@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "F7E9C92B-B071-4D71-9848-08C2A4E6634A"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E8941F53-A97C-4CCA-9A68-DBC32415B1BC"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Dynamic Islands/ContentView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "checkActiveActivities()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "E8941F53-A97C-4CCA-9A68-DBC32415B1BC - 7cf9e7a983947718"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(1) suspend resume partial function for Dynamic_Islands.ContentView.checkActiveActivities() async -&gt; ()"
+                  moduleName = "Dynamic Islands"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jordibruin/Developer/Dynamic%20Islands/Dynamic%20Islands/Dynamic%20Islands/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "E8941F53-A97C-4CCA-9A68-DBC32415B1BC - c1c6e9f9152b3a1a"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "(3) suspend resume partial function for Dynamic_Islands.ContentView.checkActiveActivities() async -&gt; ()"
+                  moduleName = "Dynamic Islands"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/jordibruin/Developer/Dynamic%20Islands/Dynamic%20Islands/Dynamic%20Islands/ContentView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "64"
+                  endingLineNumber = "64"
+                  offsetFromSymbolStart = "128">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
