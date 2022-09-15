@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2870BDB28D33A22009C337C /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BDA28D33A22009C337C /* Island.swift */; };
+		C2870BDC28D33A25009C337C /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BDA28D33A22009C337C /* Island.swift */; };
 		C2CB4D2428D28807009D46AB /* Dynamic_IslandsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CB4D2328D28807009D46AB /* Dynamic_IslandsApp.swift */; };
 		C2CB4D2628D28807009D46AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CB4D2528D28807009D46AB /* ContentView.swift */; };
 		C2CB4D2828D28808009D46AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2CB4D2728D28808009D46AB /* Assets.xcassets */; };
@@ -47,6 +49,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C2870BDA28D33A22009C337C /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
 		C2CB4D2028D28807009D46AB /* Dynamic Islands.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dynamic Islands.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CB4D2328D28807009D46AB /* Dynamic_IslandsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic_IslandsApp.swift; sourceTree = "<group>"; };
 		C2CB4D2528D28807009D46AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,6 +112,7 @@
 				C2CB4D2328D28807009D46AB /* Dynamic_IslandsApp.swift */,
 				C2CB4D2528D28807009D46AB /* ContentView.swift */,
 				C2CB4D3128D2882A009D46AB /* LiveActivities.swift */,
+				C2870BDA28D33A22009C337C /* Island.swift */,
 				C2CB4D2728D28808009D46AB /* Assets.xcassets */,
 				C2CB4D2928D28808009D46AB /* Preview Content */,
 			);
@@ -247,6 +251,7 @@
 				C2CB4D3228D2882A009D46AB /* LiveActivities.swift in Sources */,
 				C2CB4D4628D28BA1009D46AB /* Dynamic_Islands_Widget.intentdefinition in Sources */,
 				C2CB4D2628D28807009D46AB /* ContentView.swift in Sources */,
+				C2870BDB28D33A22009C337C /* Island.swift in Sources */,
 				C2CB4D2428D28807009D46AB /* Dynamic_IslandsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +262,7 @@
 			files = (
 				C2CB4D4E28D28BA9009D46AB /* LiveActivities.swift in Sources */,
 				C2CB4D4028D28BA0009D46AB /* Dynamic_Islands_Widget.swift in Sources */,
+				C2870BDC28D33A25009C337C /* Island.swift in Sources */,
 				C2CB4D4528D28BA1009D46AB /* Dynamic_Islands_Widget.intentdefinition in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

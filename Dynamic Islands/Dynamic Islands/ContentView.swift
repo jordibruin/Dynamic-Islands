@@ -10,21 +10,37 @@ import ActivityKit
 
 struct ContentView: View {
     var body: some View {
-        Button {
-            startLiveActivity()
-        } label: {
-            Text("Start Live Activity")
-        }
-        
-        Button {
-            Task {
-                await checkActiveActivities()
+        NavigationStack {
+            List {
+                ForEach(Island.allCases) { island in
+                    island.overviewView
+                }
             }
-        } label: {
-            Text("Check active activities")
+            .toolbar(content: { toolbarItems })
         }
-
-
+    }
+    
+    var toolbarItems: some ToolbarContent {
+        Group {
+            ToolbarItem(placement: .navigationBarLeading) {
+                Button {
+                    Task {
+                        await checkActiveActivities()
+                    }
+                } label: {
+                    Text("Check")
+                }
+            }
+            
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button {
+                    startLiveActivity()
+                } label: {
+                    Text("Start")
+                }
+                
+            }
+        }
     }
     
     func startLiveActivity() {
@@ -36,10 +52,10 @@ struct ContentView: View {
         } else {
             print("Not available")
         }
-     
+        
         // Estimated delivery time is one hour from now.
         let initialContentState = SimpleIslandAttributes.Status()
-                                                  
+        
         do {
             let simpleActivity = try Activity<SimpleIslandAttributes>.request(
                 attributes: attributes,
@@ -48,7 +64,7 @@ struct ContentView: View {
         } catch (let error) {
             print("Error requesting live activity \(error.localizedDescription)")
         }
-                                                  
+        
         do {
             let simpleActivity = try Activity<SimpleIslandAttributes>.request(
                 attributes: attributes,

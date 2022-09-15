@@ -12,11 +12,7 @@ import WidgetKit
 
 //@available(iOSApplicationExtension 16.1, *)
 
-//enum Island {
-//    case phone
-//
-//
-//}
+
 
 @available(iOS 16.1, *)
 struct SimpleIslandAttributes: ActivityAttributes {
