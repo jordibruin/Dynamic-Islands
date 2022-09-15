@@ -8,7 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		C2870BDB28D33A22009C337C /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BDA28D33A22009C337C /* Island.swift */; };
-		C2870BDC28D33A25009C337C /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BDA28D33A22009C337C /* Island.swift */; };
+		C2870BDF28D340E6009C337C /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = C2870BDE28D340E6009C337C /* Inject */; };
+		C2870BE028D34300009C337C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CB4D2528D28807009D46AB /* ContentView.swift */; };
+		C2870BE428D343F6009C337C /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = C2870BE328D343F6009C337C /* Inject */; };
+		C2870BE828D344B5009C337C /* PhoneTrailing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BE728D344B5009C337C /* PhoneTrailing.swift */; };
+		C2870BE928D344B8009C337C /* PhoneTrailing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BE728D344B5009C337C /* PhoneTrailing.swift */; };
+		C2870BEB28D344CD009C337C /* PhoneLeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BEA28D344CD009C337C /* PhoneLeading.swift */; };
+		C2870BEC28D344CF009C337C /* PhoneLeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BEA28D344CD009C337C /* PhoneLeading.swift */; };
+		C2870BEE28D3457C009C337C /* PhoneBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BED28D3457C009C337C /* PhoneBottom.swift */; };
+		C2870BEF28D3457D009C337C /* PhoneBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BED28D3457C009C337C /* PhoneBottom.swift */; };
+		C2870BF128D3459B009C337C /* PhoneCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BF028D3459B009C337C /* PhoneCenter.swift */; };
+		C2870BF228D3459B009C337C /* PhoneCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BF028D3459B009C337C /* PhoneCenter.swift */; };
+		C2870BF428D345CD009C337C /* PhoneDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BF328D345CD009C337C /* PhoneDetail.swift */; };
+		C2870BF628D34638009C337C /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BDA28D33A22009C337C /* Island.swift */; };
+		C2870BF728D3463C009C337C /* PhoneDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BF328D345CD009C337C /* PhoneDetail.swift */; };
 		C2CB4D2428D28807009D46AB /* Dynamic_IslandsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CB4D2328D28807009D46AB /* Dynamic_IslandsApp.swift */; };
 		C2CB4D2628D28807009D46AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CB4D2528D28807009D46AB /* ContentView.swift */; };
 		C2CB4D2828D28808009D46AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2CB4D2728D28808009D46AB /* Assets.xcassets */; };
@@ -50,6 +63,11 @@
 
 /* Begin PBXFileReference section */
 		C2870BDA28D33A22009C337C /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
+		C2870BE728D344B5009C337C /* PhoneTrailing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneTrailing.swift; sourceTree = "<group>"; };
+		C2870BEA28D344CD009C337C /* PhoneLeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneLeading.swift; sourceTree = "<group>"; };
+		C2870BED28D3457C009C337C /* PhoneBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneBottom.swift; sourceTree = "<group>"; };
+		C2870BF028D3459B009C337C /* PhoneCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneCenter.swift; sourceTree = "<group>"; };
+		C2870BF328D345CD009C337C /* PhoneDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneDetail.swift; sourceTree = "<group>"; };
 		C2CB4D2028D28807009D46AB /* Dynamic Islands.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dynamic Islands.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CB4D2328D28807009D46AB /* Dynamic_IslandsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic_IslandsApp.swift; sourceTree = "<group>"; };
 		C2CB4D2528D28807009D46AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -71,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2870BDF28D340E6009C337C /* Inject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +99,33 @@
 			files = (
 				C2CB4D3D28D28BA0009D46AB /* SwiftUI.framework in Frameworks */,
 				C2CB4D3B28D28BA0009D46AB /* WidgetKit.framework in Frameworks */,
+				C2870BE428D343F6009C337C /* Inject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C2870BE528D344A9009C337C /* Islands */ = {
+			isa = PBXGroup;
+			children = (
+				C2870BE628D344AF009C337C /* Phone */,
+			);
+			path = Islands;
+			sourceTree = "<group>";
+		};
+		C2870BE628D344AF009C337C /* Phone */ = {
+			isa = PBXGroup;
+			children = (
+				C2870BE728D344B5009C337C /* PhoneTrailing.swift */,
+				C2870BF328D345CD009C337C /* PhoneDetail.swift */,
+				C2870BEA28D344CD009C337C /* PhoneLeading.swift */,
+				C2870BED28D3457C009C337C /* PhoneBottom.swift */,
+				C2870BF028D3459B009C337C /* PhoneCenter.swift */,
+			);
+			path = Phone;
+			sourceTree = "<group>";
+		};
 		C2CB4D1728D28807009D46AB = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +152,7 @@
 				C2CB4D2328D28807009D46AB /* Dynamic_IslandsApp.swift */,
 				C2CB4D2528D28807009D46AB /* ContentView.swift */,
 				C2CB4D3128D2882A009D46AB /* LiveActivities.swift */,
+				C2870BE528D344A9009C337C /* Islands */,
 				C2870BDA28D33A22009C337C /* Island.swift */,
 				C2CB4D2728D28808009D46AB /* Assets.xcassets */,
 				C2CB4D2928D28808009D46AB /* Preview Content */,
@@ -165,6 +206,9 @@
 				C2CB4D4828D28BA1009D46AB /* PBXTargetDependency */,
 			);
 			name = "Dynamic Islands";
+			packageProductDependencies = (
+				C2870BDE28D340E6009C337C /* Inject */,
+			);
 			productName = "Dynamic Islands";
 			productReference = C2CB4D2028D28807009D46AB /* Dynamic Islands.app */;
 			productType = "com.apple.product-type.application";
@@ -182,6 +226,9 @@
 			dependencies = (
 			);
 			name = "Dynamic Islands WidgetExtension";
+			packageProductDependencies = (
+				C2870BE328D343F6009C337C /* Inject */,
+			);
 			productName = "Dynamic Islands WidgetExtension";
 			productReference = C2CB4D3828D28BA0009D46AB /* Dynamic Islands WidgetExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -213,6 +260,9 @@
 				Base,
 			);
 			mainGroup = C2CB4D1728D28807009D46AB;
+			packageReferences = (
+				C2870BDD28D340E6009C337C /* XCRemoteSwiftPackageReference "Inject" */,
+			);
 			productRefGroup = C2CB4D2128D28807009D46AB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -250,9 +300,14 @@
 			files = (
 				C2CB4D3228D2882A009D46AB /* LiveActivities.swift in Sources */,
 				C2CB4D4628D28BA1009D46AB /* Dynamic_Islands_Widget.intentdefinition in Sources */,
+				C2870BE828D344B5009C337C /* PhoneTrailing.swift in Sources */,
+				C2870BEE28D3457C009C337C /* PhoneBottom.swift in Sources */,
 				C2CB4D2628D28807009D46AB /* ContentView.swift in Sources */,
+				C2870BF428D345CD009C337C /* PhoneDetail.swift in Sources */,
 				C2870BDB28D33A22009C337C /* Island.swift in Sources */,
+				C2870BF128D3459B009C337C /* PhoneCenter.swift in Sources */,
 				C2CB4D2428D28807009D46AB /* Dynamic_IslandsApp.swift in Sources */,
+				C2870BEB28D344CD009C337C /* PhoneLeading.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,9 +316,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2CB4D4E28D28BA9009D46AB /* LiveActivities.swift in Sources */,
+				C2870BE028D34300009C337C /* ContentView.swift in Sources */,
+				C2870BF628D34638009C337C /* Island.swift in Sources */,
+				C2870BE928D344B8009C337C /* PhoneTrailing.swift in Sources */,
+				C2870BEF28D3457D009C337C /* PhoneBottom.swift in Sources */,
+				C2870BF728D3463C009C337C /* PhoneDetail.swift in Sources */,
 				C2CB4D4028D28BA0009D46AB /* Dynamic_Islands_Widget.swift in Sources */,
-				C2870BDC28D33A25009C337C /* Island.swift in Sources */,
+				C2870BF228D3459B009C337C /* PhoneCenter.swift in Sources */,
 				C2CB4D4528D28BA1009D46AB /* Dynamic_Islands_Widget.intentdefinition in Sources */,
+				C2870BEC28D344CF009C337C /* PhoneLeading.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +475,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.goodsnooze.Dynamic-Islands";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -447,6 +512,10 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
+				OTHER_LDFLAGS = (
+					"-Xlinker",
+					"-interposable",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.goodsnooze.Dynamic-Islands";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -541,6 +610,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C2870BDD28D340E6009C337C /* XCRemoteSwiftPackageReference "Inject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/krzysztofzablocki/Inject.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C2870BDE28D340E6009C337C /* Inject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2870BDD28D340E6009C337C /* XCRemoteSwiftPackageReference "Inject" */;
+			productName = Inject;
+		};
+		C2870BE328D343F6009C337C /* Inject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C2870BDD28D340E6009C337C /* XCRemoteSwiftPackageReference "Inject" */;
+			productName = Inject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C2CB4D1828D28807009D46AB /* Project object */;
 }

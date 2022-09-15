@@ -7,17 +7,33 @@
 
 import SwiftUI
 import ActivityKit
+import Inject
 
 struct ContentView: View {
+    
+    @State var selectedIsland: Island?
+    
+    @ObserveInjection var inject
+    
+    
     var body: some View {
         NavigationStack {
             List {
                 ForEach(Island.allCases) { island in
-                    island.overviewView
+                    NavigationLink(value: island) {
+                        island.overviewView
+                    }
+                    .listRowBackground(Color.clear)
+                    .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
                 }
             }
-            .toolbar(content: { toolbarItems })
+//            .toolbar(content: { toolbarItems })
+            .navigationDestination(for: Island.self) { island in
+                island.detailView
+            }
+            .navigationTitle("🏝 Dynamic Islands")
         }
+        .enableInjection()
     }
     
     var toolbarItems: some ToolbarContent {
@@ -32,48 +48,21 @@ struct ContentView: View {
                 }
             }
             
-            ToolbarItem(placement: .navigationBarTrailing) {
-                Button {
-                    startLiveActivity()
-                } label: {
-                    Text("Start")
+            if selectedIsland != nil {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        selectedIsland!.startLiveActivity()
+                    } label: {
+                        Text("Start")
+                    }
+                    
                 }
-                
             }
         }
     }
     
-    func startLiveActivity() {
-        print("Starting Live Activity")
-        let attributes = SimpleIslandAttributes()
-        
-        if ActivityAuthorizationInfo().areActivitiesEnabled {
-            print("Activities enabled")
-        } else {
-            print("Not available")
-        }
-        
-        // Estimated delivery time is one hour from now.
-        let initialContentState = SimpleIslandAttributes.Status()
-        
-        do {
-            let simpleActivity = try Activity<SimpleIslandAttributes>.request(
-                attributes: attributes,
-                contentState: initialContentState,
-                pushType: nil)
-        } catch (let error) {
-            print("Error requesting live activity \(error.localizedDescription)")
-        }
-        
-        do {
-            let simpleActivity = try Activity<SimpleIslandAttributes>.request(
-                attributes: attributes,
-                contentState: initialContentState,
-                pushType: nil)
-            print("Requested an activity \(simpleActivity.id)")
-        } catch (let error) {
-            print("Error requesting Activity \(error.localizedDescription)")
-        }
+    func startLiveActivity(for island: Island) {
+        island.startLiveActivity()
     }
     
     func checkActiveActivities() async {
@@ -88,3 +77,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+//@_exported import Inject
 
 @main
 struct Dynamic_IslandsApp: App {
