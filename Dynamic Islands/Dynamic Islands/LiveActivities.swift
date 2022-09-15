@@ -10,17 +10,6 @@ import ActivityKit
 import SwiftUI
 import WidgetKit
 
-
-@available(iOS 16.1, *)
-struct SimpleIslandAttributes: ActivityAttributes {
-    public typealias Status = ContentState
-    
-    public struct ContentState: Codable, Hashable {}
-    
-    var island: Island
-}
-
-
 struct SimpleActivityWidget: Widget {
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: SimpleIslandAttributes.self) { context in
@@ -36,23 +25,30 @@ struct SimpleActivityWidget: Widget {
                 }
                 
                 DynamicIslandExpandedRegion(.center) {
-//                    Text("Center")
+                    if context.attributes.island.hasCenter {
+                        context.attributes.island.center
+                    }
                 }
-                
+            
                 DynamicIslandExpandedRegion(.bottom) {
-//                   Text("Bottom")
+                    if context.attributes.island.hasBottom{
+                        context.attributes.island.bottom
+                    }
                 }
             } compactLeading: {
-                Text("Leading")
+                context.attributes.island.compactLeading
             } compactTrailing: {
-                Text("Trailing")
+                context.attributes.island.compactTrailing
             } minimal: {
-                Image(systemName: "phone.circle.fill")
-                    .foregroundColor(.green)
-                    .font(.title2)
+                context.attributes.island.minimal
+                
             }
         }
     }
+    
+//    var expanded(context: ActivityViewContext<SimpleIslandAttributes>): DynamicIslandExpandedContent {
+//
+//    }
 }
 
 

@@ -11,17 +11,19 @@
 		C2870BDF28D340E6009C337C /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = C2870BDE28D340E6009C337C /* Inject */; };
 		C2870BE028D34300009C337C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CB4D2528D28807009D46AB /* ContentView.swift */; };
 		C2870BE428D343F6009C337C /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = C2870BE328D343F6009C337C /* Inject */; };
-		C2870BE828D344B5009C337C /* PhoneTrailing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BE728D344B5009C337C /* PhoneTrailing.swift */; };
-		C2870BE928D344B8009C337C /* PhoneTrailing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BE728D344B5009C337C /* PhoneTrailing.swift */; };
-		C2870BEB28D344CD009C337C /* PhoneLeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BEA28D344CD009C337C /* PhoneLeading.swift */; };
-		C2870BEC28D344CF009C337C /* PhoneLeading.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BEA28D344CD009C337C /* PhoneLeading.swift */; };
-		C2870BEE28D3457C009C337C /* PhoneBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BED28D3457C009C337C /* PhoneBottom.swift */; };
-		C2870BEF28D3457D009C337C /* PhoneBottom.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BED28D3457C009C337C /* PhoneBottom.swift */; };
-		C2870BF128D3459B009C337C /* PhoneCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BF028D3459B009C337C /* PhoneCenter.swift */; };
-		C2870BF228D3459B009C337C /* PhoneCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BF028D3459B009C337C /* PhoneCenter.swift */; };
 		C2870BF428D345CD009C337C /* PhoneDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BF328D345CD009C337C /* PhoneDetail.swift */; };
 		C2870BF628D34638009C337C /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BDA28D33A22009C337C /* Island.swift */; };
 		C2870BF728D3463C009C337C /* PhoneDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BF328D345CD009C337C /* PhoneDetail.swift */; };
+		C2870BFB28D34C23009C337C /* AreasDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BFA28D34C23009C337C /* AreasDetail.swift */; };
+		C2870BFC28D34C23009C337C /* AreasDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BFA28D34C23009C337C /* AreasDetail.swift */; };
+		C2870BFE28D34C8C009C337C /* AreasViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BFD28D34C8C009C337C /* AreasViews.swift */; };
+		C2870BFF28D34C8C009C337C /* AreasViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BFD28D34C8C009C337C /* AreasViews.swift */; };
+		C2870C0128D34D2F009C337C /* PhoneViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870C0028D34D2F009C337C /* PhoneViews.swift */; };
+		C2870C0228D34D2F009C337C /* PhoneViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870C0028D34D2F009C337C /* PhoneViews.swift */; };
+		C2870C0428D34D79009C337C /* AreasAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870C0328D34D79009C337C /* AreasAttributes.swift */; };
+		C2870C0528D34D79009C337C /* AreasAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870C0328D34D79009C337C /* AreasAttributes.swift */; };
+		C2870C0728D34D86009C337C /* PhoneAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870C0628D34D86009C337C /* PhoneAttributes.swift */; };
+		C2870C0828D34D86009C337C /* PhoneAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870C0628D34D86009C337C /* PhoneAttributes.swift */; };
 		C2CB4D2428D28807009D46AB /* Dynamic_IslandsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CB4D2328D28807009D46AB /* Dynamic_IslandsApp.swift */; };
 		C2CB4D2628D28807009D46AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CB4D2528D28807009D46AB /* ContentView.swift */; };
 		C2CB4D2828D28808009D46AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2CB4D2728D28808009D46AB /* Assets.xcassets */; };
@@ -63,11 +65,12 @@
 
 /* Begin PBXFileReference section */
 		C2870BDA28D33A22009C337C /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
-		C2870BE728D344B5009C337C /* PhoneTrailing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneTrailing.swift; sourceTree = "<group>"; };
-		C2870BEA28D344CD009C337C /* PhoneLeading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneLeading.swift; sourceTree = "<group>"; };
-		C2870BED28D3457C009C337C /* PhoneBottom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneBottom.swift; sourceTree = "<group>"; };
-		C2870BF028D3459B009C337C /* PhoneCenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneCenter.swift; sourceTree = "<group>"; };
 		C2870BF328D345CD009C337C /* PhoneDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneDetail.swift; sourceTree = "<group>"; };
+		C2870BFA28D34C23009C337C /* AreasDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreasDetail.swift; sourceTree = "<group>"; };
+		C2870BFD28D34C8C009C337C /* AreasViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreasViews.swift; sourceTree = "<group>"; };
+		C2870C0028D34D2F009C337C /* PhoneViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViews.swift; sourceTree = "<group>"; };
+		C2870C0328D34D79009C337C /* AreasAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreasAttributes.swift; sourceTree = "<group>"; };
+		C2870C0628D34D86009C337C /* PhoneAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAttributes.swift; sourceTree = "<group>"; };
 		C2CB4D2028D28807009D46AB /* Dynamic Islands.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dynamic Islands.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CB4D2328D28807009D46AB /* Dynamic_IslandsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic_IslandsApp.swift; sourceTree = "<group>"; };
 		C2CB4D2528D28807009D46AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -109,6 +112,7 @@
 		C2870BE528D344A9009C337C /* Islands */ = {
 			isa = PBXGroup;
 			children = (
+				C2870BF928D34C19009C337C /* Areas */,
 				C2870BE628D344AF009C337C /* Phone */,
 			);
 			path = Islands;
@@ -117,13 +121,29 @@
 		C2870BE628D344AF009C337C /* Phone */ = {
 			isa = PBXGroup;
 			children = (
-				C2870BE728D344B5009C337C /* PhoneTrailing.swift */,
 				C2870BF328D345CD009C337C /* PhoneDetail.swift */,
-				C2870BEA28D344CD009C337C /* PhoneLeading.swift */,
-				C2870BED28D3457C009C337C /* PhoneBottom.swift */,
-				C2870BF028D3459B009C337C /* PhoneCenter.swift */,
+				C2870C0628D34D86009C337C /* PhoneAttributes.swift */,
+				C2870C0028D34D2F009C337C /* PhoneViews.swift */,
 			);
 			path = Phone;
+			sourceTree = "<group>";
+		};
+		C2870BF828D34BF0009C337C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2870BDA28D33A22009C337C /* Island.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2870BF928D34C19009C337C /* Areas */ = {
+			isa = PBXGroup;
+			children = (
+				C2870BFA28D34C23009C337C /* AreasDetail.swift */,
+				C2870C0328D34D79009C337C /* AreasAttributes.swift */,
+				C2870BFD28D34C8C009C337C /* AreasViews.swift */,
+			);
+			path = Areas;
 			sourceTree = "<group>";
 		};
 		C2CB4D1728D28807009D46AB = {
@@ -152,8 +172,8 @@
 				C2CB4D2328D28807009D46AB /* Dynamic_IslandsApp.swift */,
 				C2CB4D2528D28807009D46AB /* ContentView.swift */,
 				C2CB4D3128D2882A009D46AB /* LiveActivities.swift */,
+				C2870BF828D34BF0009C337C /* Model */,
 				C2870BE528D344A9009C337C /* Islands */,
-				C2870BDA28D33A22009C337C /* Island.swift */,
 				C2CB4D2728D28808009D46AB /* Assets.xcassets */,
 				C2CB4D2928D28808009D46AB /* Preview Content */,
 			);
@@ -299,15 +319,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2CB4D3228D2882A009D46AB /* LiveActivities.swift in Sources */,
+				C2870C0428D34D79009C337C /* AreasAttributes.swift in Sources */,
+				C2870C0728D34D86009C337C /* PhoneAttributes.swift in Sources */,
 				C2CB4D4628D28BA1009D46AB /* Dynamic_Islands_Widget.intentdefinition in Sources */,
-				C2870BE828D344B5009C337C /* PhoneTrailing.swift in Sources */,
-				C2870BEE28D3457C009C337C /* PhoneBottom.swift in Sources */,
+				C2870C0128D34D2F009C337C /* PhoneViews.swift in Sources */,
 				C2CB4D2628D28807009D46AB /* ContentView.swift in Sources */,
+				C2870BFE28D34C8C009C337C /* AreasViews.swift in Sources */,
 				C2870BF428D345CD009C337C /* PhoneDetail.swift in Sources */,
 				C2870BDB28D33A22009C337C /* Island.swift in Sources */,
-				C2870BF128D3459B009C337C /* PhoneCenter.swift in Sources */,
+				C2870BFB28D34C23009C337C /* AreasDetail.swift in Sources */,
 				C2CB4D2428D28807009D46AB /* Dynamic_IslandsApp.swift in Sources */,
-				C2870BEB28D344CD009C337C /* PhoneLeading.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,15 +337,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C2CB4D4E28D28BA9009D46AB /* LiveActivities.swift in Sources */,
+				C2870C0528D34D79009C337C /* AreasAttributes.swift in Sources */,
+				C2870C0828D34D86009C337C /* PhoneAttributes.swift in Sources */,
 				C2870BE028D34300009C337C /* ContentView.swift in Sources */,
 				C2870BF628D34638009C337C /* Island.swift in Sources */,
-				C2870BE928D344B8009C337C /* PhoneTrailing.swift in Sources */,
-				C2870BEF28D3457D009C337C /* PhoneBottom.swift in Sources */,
+				C2870C0228D34D2F009C337C /* PhoneViews.swift in Sources */,
+				C2870BFF28D34C8C009C337C /* AreasViews.swift in Sources */,
 				C2870BF728D3463C009C337C /* PhoneDetail.swift in Sources */,
 				C2CB4D4028D28BA0009D46AB /* Dynamic_Islands_Widget.swift in Sources */,
-				C2870BF228D3459B009C337C /* PhoneCenter.swift in Sources */,
+				C2870BFC28D34C23009C337C /* AreasDetail.swift in Sources */,
 				C2CB4D4528D28BA1009D46AB /* Dynamic_Islands_Widget.intentdefinition in Sources */,
-				C2870BEC28D344CF009C337C /* PhoneLeading.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
