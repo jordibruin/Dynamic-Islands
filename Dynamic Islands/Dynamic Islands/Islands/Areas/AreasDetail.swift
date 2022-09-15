@@ -16,7 +16,6 @@ struct AreasDetail: View {
         }
         .enableInjection()
         .navigationTitle(Island.areas.rawValue.capitalized)
-        .navigationBarTitleDisplayMode(.inline)
     }
     
     var activityPreview: some View {

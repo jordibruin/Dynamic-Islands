@@ -46,10 +46,6 @@ struct PhoneMinimal_Previews: PreviewProvider {
     }
 }
 
-
-
-
-
 // MARK: LEADING
 struct PhoneLeading: View {
     var body: some View {

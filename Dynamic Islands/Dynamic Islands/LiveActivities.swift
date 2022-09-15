@@ -45,12 +45,7 @@ struct SimpleActivityWidget: Widget {
             }
         }
     }
-    
-//    var expanded(context: ActivityViewContext<SimpleIslandAttributes>): DynamicIslandExpandedContent {
-//
-//    }
 }
-
 
 struct SimpleLockScreenLiveActivityView: View {
     let context: ActivityViewContext<SimpleIslandAttributes>

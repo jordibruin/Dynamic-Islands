@@ -17,6 +17,7 @@ struct PhoneDetailView: View {
             Spacer()
             
         }
+        .navigationTitle(Island.phone.rawValue.capitalized)
         .enableInjection()
     }
     
