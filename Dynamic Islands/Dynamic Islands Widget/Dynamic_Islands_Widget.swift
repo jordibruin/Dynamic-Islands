@@ -53,7 +53,8 @@ struct PizzaDeliveryWidgets: WidgetBundle {
     var body: some Widget {
         
         if #available(iOS 16.1, *) {
-            SimpleActivityWidget()
+            PhoneWidget()
+            AreasWidget()
         }
     }
 }

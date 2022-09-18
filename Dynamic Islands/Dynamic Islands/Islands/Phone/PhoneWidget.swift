@@ -1,19 +1,18 @@
 //
-//  LiveActivities.swift
+//  PhoneWidget.swift
 //  Dynamic Islands
 //
-//  Created by Jordi Bruin on 15/09/2022.
+//  Created by Jordi Bruin on 18/09/2022.
 //
 
-import Foundation
-import ActivityKit
 import SwiftUI
+import ActivityKit
 import WidgetKit
 
-struct SimpleActivityWidget: Widget {
+struct PhoneWidget: Widget {
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: SimpleIslandAttributes.self) { context in
-            SimpleLockScreenLiveActivityView(context: context)
+            PhoneLockScreen(context: context)
         } dynamicIsland: { context in
             DynamicIsland {
                 DynamicIslandExpandedRegion(.leading, priority: 4) {
@@ -46,13 +45,4 @@ struct SimpleActivityWidget: Widget {
         }
     }
 }
-
-struct SimpleLockScreenLiveActivityView: View {
-    let context: ActivityViewContext<SimpleIslandAttributes>
-    
-    var body: some View {
-        Text("This is the live activity")
-    }
-}
-
 

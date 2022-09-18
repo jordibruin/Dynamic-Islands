@@ -46,7 +46,7 @@ struct PhoneDetailView: View {
             .buttonStyle(.borderedProminent)
             
             Button {
-                Island.phone.startLiveActivity()
+                Island.phone.stopLiveActivity()
             } label: {
                 Text("Stop Live Activity")
             }

@@ -6,7 +6,8 @@
 //
 
 import SwiftUI
-
+import ActivityKit
+import WidgetKit
 
 struct PhoneCompactLeading: View {
     var body: some View {
@@ -134,5 +135,13 @@ struct PhoneCenter: View {
 struct PhoneCenter_Previews: PreviewProvider {
     static var previews: some View {
         PhoneCenter()
+    }
+}
+
+struct PhoneLockScreen: View {
+    let context: ActivityViewContext<SimpleIslandAttributes>
+    
+    var body: some View {
+        Text("This is the live activity")
     }
 }

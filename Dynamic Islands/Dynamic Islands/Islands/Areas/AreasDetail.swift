@@ -44,7 +44,7 @@ struct AreasDetail: View {
             .buttonStyle(.borderedProminent)
             
             Button {
-                Island.areas.startLiveActivity()
+                Island.areas.stopLiveActivity()
             } label: {
                 Text("Stop Live Activity")
             }

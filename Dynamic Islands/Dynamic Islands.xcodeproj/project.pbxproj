@@ -28,7 +28,6 @@
 		C2CB4D2628D28807009D46AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CB4D2528D28807009D46AB /* ContentView.swift */; };
 		C2CB4D2828D28808009D46AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2CB4D2728D28808009D46AB /* Assets.xcassets */; };
 		C2CB4D2B28D28808009D46AB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2CB4D2A28D28808009D46AB /* Preview Assets.xcassets */; };
-		C2CB4D3228D2882A009D46AB /* LiveActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CB4D3128D2882A009D46AB /* LiveActivities.swift */; };
 		C2CB4D3B28D28BA0009D46AB /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2CB4D3A28D28BA0009D46AB /* WidgetKit.framework */; };
 		C2CB4D3D28D28BA0009D46AB /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2CB4D3C28D28BA0009D46AB /* SwiftUI.framework */; };
 		C2CB4D4028D28BA0009D46AB /* Dynamic_Islands_Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CB4D3F28D28BA0009D46AB /* Dynamic_Islands_Widget.swift */; };
@@ -36,7 +35,10 @@
 		C2CB4D4528D28BA1009D46AB /* Dynamic_Islands_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C2CB4D4128D28BA0009D46AB /* Dynamic_Islands_Widget.intentdefinition */; };
 		C2CB4D4628D28BA1009D46AB /* Dynamic_Islands_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = C2CB4D4128D28BA0009D46AB /* Dynamic_Islands_Widget.intentdefinition */; };
 		C2CB4D4928D28BA1009D46AB /* Dynamic Islands WidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C2CB4D3828D28BA0009D46AB /* Dynamic Islands WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		C2CB4D4E28D28BA9009D46AB /* LiveActivities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CB4D3128D2882A009D46AB /* LiveActivities.swift */; };
+		C2D1252D28D752F100DEBF6B /* AreasWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D1252C28D752F100DEBF6B /* AreasWidget.swift */; };
+		C2D1252E28D752F100DEBF6B /* AreasWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D1252C28D752F100DEBF6B /* AreasWidget.swift */; };
+		C2D1253028D7533400DEBF6B /* PhoneWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D1252F28D7533400DEBF6B /* PhoneWidget.swift */; };
+		C2D1253128D7533400DEBF6B /* PhoneWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D1252F28D7533400DEBF6B /* PhoneWidget.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +78,6 @@
 		C2CB4D2528D28807009D46AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C2CB4D2728D28808009D46AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2CB4D2A28D28808009D46AB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		C2CB4D3128D2882A009D46AB /* LiveActivities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivities.swift; sourceTree = "<group>"; };
 		C2CB4D3328D289E7009D46AB /* Dynamic-Islands-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Dynamic-Islands-Info.plist"; sourceTree = SOURCE_ROOT; };
 		C2CB4D3828D28BA0009D46AB /* Dynamic Islands WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Dynamic Islands WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CB4D3A28D28BA0009D46AB /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -85,6 +86,8 @@
 		C2CB4D4128D28BA0009D46AB /* Dynamic_Islands_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Dynamic_Islands_Widget.intentdefinition; sourceTree = "<group>"; };
 		C2CB4D4228D28BA1009D46AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2CB4D4428D28BA1009D46AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C2D1252C28D752F100DEBF6B /* AreasWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreasWidget.swift; sourceTree = "<group>"; };
+		C2D1252F28D7533400DEBF6B /* PhoneWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneWidget.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,7 @@
 				C2870BF328D345CD009C337C /* PhoneDetail.swift */,
 				C2870C0628D34D86009C337C /* PhoneAttributes.swift */,
 				C2870C0028D34D2F009C337C /* PhoneViews.swift */,
+				C2D1252F28D7533400DEBF6B /* PhoneWidget.swift */,
 			);
 			path = Phone;
 			sourceTree = "<group>";
@@ -142,6 +146,7 @@
 				C2870BFA28D34C23009C337C /* AreasDetail.swift */,
 				C2870C0328D34D79009C337C /* AreasAttributes.swift */,
 				C2870BFD28D34C8C009C337C /* AreasViews.swift */,
+				C2D1252C28D752F100DEBF6B /* AreasWidget.swift */,
 			);
 			path = Areas;
 			sourceTree = "<group>";
@@ -171,7 +176,6 @@
 				C2CB4D3328D289E7009D46AB /* Dynamic-Islands-Info.plist */,
 				C2CB4D2328D28807009D46AB /* Dynamic_IslandsApp.swift */,
 				C2CB4D2528D28807009D46AB /* ContentView.swift */,
-				C2CB4D3128D2882A009D46AB /* LiveActivities.swift */,
 				C2870BF828D34BF0009C337C /* Model */,
 				C2870BE528D344A9009C337C /* Islands */,
 				C2CB4D2728D28808009D46AB /* Assets.xcassets */,
@@ -318,7 +322,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2CB4D3228D2882A009D46AB /* LiveActivities.swift in Sources */,
 				C2870C0428D34D79009C337C /* AreasAttributes.swift in Sources */,
 				C2870C0728D34D86009C337C /* PhoneAttributes.swift in Sources */,
 				C2CB4D4628D28BA1009D46AB /* Dynamic_Islands_Widget.intentdefinition in Sources */,
@@ -326,7 +329,9 @@
 				C2CB4D2628D28807009D46AB /* ContentView.swift in Sources */,
 				C2870BFE28D34C8C009C337C /* AreasViews.swift in Sources */,
 				C2870BF428D345CD009C337C /* PhoneDetail.swift in Sources */,
+				C2D1252D28D752F100DEBF6B /* AreasWidget.swift in Sources */,
 				C2870BDB28D33A22009C337C /* Island.swift in Sources */,
+				C2D1253028D7533400DEBF6B /* PhoneWidget.swift in Sources */,
 				C2870BFB28D34C23009C337C /* AreasDetail.swift in Sources */,
 				C2CB4D2428D28807009D46AB /* Dynamic_IslandsApp.swift in Sources */,
 			);
@@ -336,7 +341,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2CB4D4E28D28BA9009D46AB /* LiveActivities.swift in Sources */,
 				C2870C0528D34D79009C337C /* AreasAttributes.swift in Sources */,
 				C2870C0828D34D86009C337C /* PhoneAttributes.swift in Sources */,
 				C2870BE028D34300009C337C /* ContentView.swift in Sources */,
@@ -344,7 +348,9 @@
 				C2870C0228D34D2F009C337C /* PhoneViews.swift in Sources */,
 				C2870BFF28D34C8C009C337C /* AreasViews.swift in Sources */,
 				C2870BF728D3463C009C337C /* PhoneDetail.swift in Sources */,
+				C2D1252E28D752F100DEBF6B /* AreasWidget.swift in Sources */,
 				C2CB4D4028D28BA0009D46AB /* Dynamic_Islands_Widget.swift in Sources */,
+				C2D1253128D7533400DEBF6B /* PhoneWidget.swift in Sources */,
 				C2870BFC28D34C23009C337C /* AreasDetail.swift in Sources */,
 				C2CB4D4528D28BA1009D46AB /* Dynamic_Islands_Widget.intentdefinition in Sources */,
 			);
@@ -484,6 +490,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Dynamic Islands/Preview Content\"";
+				DEVELOPMENT_TEAM = 8Q7TMPA46J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Dynamic-Islands-Info.plist";
@@ -521,6 +528,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Dynamic Islands/Preview Content\"";
+				DEVELOPMENT_TEAM = 8Q7TMPA46J;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Dynamic-Islands-Info.plist";
@@ -556,6 +564,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Q7TMPA46J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Dynamic Islands Widget/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Dynamic Islands Widget";
@@ -582,6 +591,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8Q7TMPA46J;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Dynamic Islands Widget/Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Dynamic Islands Widget";

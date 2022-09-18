@@ -176,39 +176,36 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
                     attributes: self.attributes as! SimpleIslandAttributes,
                     contentState: initialContentState,
                     pushType: nil)
+                print("Starting live activity")
             } catch (let error) {
                 print("Error requesting live activity \(error.localizedDescription)")
             }
-            
-            do {
-                let simpleActivity = try Activity<SimpleIslandAttributes>.request(
-                    attributes: self.attributes as! SimpleIslandAttributes,
-                    contentState: initialContentState,
-                    pushType: nil)
-                print("Requested an activity \(simpleActivity.id)")
-            } catch (let error) {
-                print("Error requesting Activity \(error.localizedDescription)")
-            }
         case .areas:
             let initialContentState = AreasIslandAttributes.Status()
-            
+
             do {
                 _ = try Activity<AreasIslandAttributes>.request(
                     attributes: self.attributes as! AreasIslandAttributes,
                     contentState: initialContentState,
                     pushType: nil)
+                print("Starting live activity")
             } catch (let error) {
                 print("Error requesting live activity \(error.localizedDescription)")
             }
+        }
+    }
+    
+    func stopLiveActivity() {
+        for activity in Activity<SimpleIslandAttributes>.activities {
             
-            do {
-                let simpleActivity = try Activity<AreasIslandAttributes>.request(
-                    attributes: self.attributes as! AreasIslandAttributes,
-                    contentState: initialContentState,
-                    pushType: nil)
-                print("Requested an activity \(simpleActivity.id)")
-            } catch (let error) {
-                print("Error requesting Activity \(error.localizedDescription)")
+            let updatedStatus = SimpleIslandAttributes.Status()
+            
+            Task {
+                do {
+                    try await activity.end(using: updatedStatus, dismissalPolicy: .immediate)
+                } catch(let error) {
+                    print("Error ending activity \(error.localizedDescription)")
+                }
             }
         }
     }

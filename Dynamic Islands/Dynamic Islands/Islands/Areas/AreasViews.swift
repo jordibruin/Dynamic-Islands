@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import ActivityKit
+import WidgetKit
 
 struct AreasCompactLeading: View {
     var body: some View {
@@ -98,3 +100,15 @@ struct AreasBottom_Previews: PreviewProvider {
         AreasBottom()
     }
 }
+
+
+
+struct AreasLockScreen: View {
+    let context: ActivityViewContext<AreasIslandAttributes>
+    
+    var body: some View {
+        Text("This is the live activity")
+    }
+}
+
+
