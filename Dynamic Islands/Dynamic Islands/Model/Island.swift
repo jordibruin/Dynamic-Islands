@@ -38,14 +38,26 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
             RoundedRectangle(cornerRadius: 40)
                 .foregroundColor(.black)
                 .overlay(
-                    HStack {
-                        self.leading
-                        Spacer()
-                        self.trailing
+                    HStack(spacing: 0) {
+                        Rectangle()
+                            .foregroundColor(.blue)
+                        Rectangle()
+                            .foregroundColor(.green)
                     }
-                    .padding(.horizontal, 12)
+                        
+                    .overlay(
+                        RoundedRectangle(cornerRadius: 20)
+                            .foregroundColor(.red)
+                            .frame(width: 100, height: 28)
+                    )
+                    .overlay(
+                        Text("Areas")
+                    )
+                    
+//                    .padding(.horizontal, 12)
                     .foregroundColor(.white)
                 )
+                .clipShape(RoundedRectangle(cornerRadius: 20))
                 .frame(height: 80)
         }
     }

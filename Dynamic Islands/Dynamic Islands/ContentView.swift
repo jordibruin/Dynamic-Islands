@@ -23,11 +23,19 @@ struct ContentView: View {
                     Section {
                         NavigationLink(value: island) {
                             island.overviewView
-                                .onLongPressGesture {
-                                    print("long")
-                                    island.startLiveActivity()
-                                    UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
-                                }
+                                .swipeActions {
+                                        Button("Start Live Activity") {
+                                            island.startLiveActivity()
+                                            UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
+                                        }
+                                        .tint(.green)
+                                    
+                                        Button("Stop Live Activity") {
+                                            island.stopLiveActivity()
+                                        }
+                                        .tint(.red)
+                                    }
+                        
                         }
                         .listRowBackground(Color.clear)
                         .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))

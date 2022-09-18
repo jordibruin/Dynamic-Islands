@@ -14,13 +14,13 @@
             filePath = "Dynamic Islands/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "76"
-            endingLineNumber = "76"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "checkActiveActivities()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "E8941F53-A97C-4CCA-9A68-DBC32415B1BC - 7cf9e7a983947684"
+                  uuid = "E8941F53-A97C-4CCA-9A68-DBC32415B1BC - 7cf9e7a98394758c"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -30,12 +30,12 @@
                   urlString = "file:///Users/jordibruin/Developer/Dynamic%20Islands/Dynamic%20Islands/Dynamic%20Islands/ContentView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "76"
-                  endingLineNumber = "76"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
                   offsetFromSymbolStart = "96">
                </Location>
                <Location
-                  uuid = "E8941F53-A97C-4CCA-9A68-DBC32415B1BC - c1c6e9f9152b3b86"
+                  uuid = "E8941F53-A97C-4CCA-9A68-DBC32415B1BC - c1c6e9f9152b388e"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -45,8 +45,8 @@
                   urlString = "file:///Users/jordibruin/Developer/Dynamic%20Islands/Dynamic%20Islands/Dynamic%20Islands/ContentView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "76"
-                  endingLineNumber = "76"
+                  startingLineNumber = "84"
+                  endingLineNumber = "84"
                   offsetFromSymbolStart = "136">
                </Location>
             </Locations>
@@ -62,8 +62,8 @@
             filePath = "Dynamic Islands/Model/Island.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "184"
-            endingLineNumber = "184"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
             landmarkName = "startLiveActivity()"
             landmarkType = "7">
          </BreakpointContent>
@@ -78,8 +78,8 @@
             filePath = "Dynamic Islands/Model/Island.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "172"
-            endingLineNumber = "172"
+            startingLineNumber = "184"
+            endingLineNumber = "184"
             landmarkName = "startLiveActivity()"
             landmarkType = "7">
          </BreakpointContent>
@@ -94,8 +94,8 @@
             filePath = "Dynamic Islands/Model/Island.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "193"
-            endingLineNumber = "193"
+            startingLineNumber = "205"
+            endingLineNumber = "205"
             landmarkName = "startLiveActivity()"
             landmarkType = "7">
          </BreakpointContent>
