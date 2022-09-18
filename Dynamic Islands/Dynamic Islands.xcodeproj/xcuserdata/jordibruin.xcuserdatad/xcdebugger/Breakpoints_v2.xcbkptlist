@@ -14,42 +14,10 @@
             filePath = "Dynamic Islands/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
             landmarkName = "checkActiveActivities()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "E8941F53-A97C-4CCA-9A68-DBC32415B1BC - 7cf9e7a98394758c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(1) suspend resume partial function for Dynamic_Islands.ContentView.checkActiveActivities() async -&gt; ()"
-                  moduleName = "Dynamic Islands"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jordibruin/Developer/Dynamic%20Islands/Dynamic%20Islands/Dynamic%20Islands/ContentView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "84"
-                  endingLineNumber = "84"
-                  offsetFromSymbolStart = "96">
-               </Location>
-               <Location
-                  uuid = "E8941F53-A97C-4CCA-9A68-DBC32415B1BC - c1c6e9f9152b388e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "(3) suspend resume partial function for Dynamic_Islands.ContentView.checkActiveActivities() async -&gt; ()"
-                  moduleName = "Dynamic Islands"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/jordibruin/Developer/Dynamic%20Islands/Dynamic%20Islands/Dynamic%20Islands/ContentView.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "84"
-                  endingLineNumber = "84"
-                  offsetFromSymbolStart = "136">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

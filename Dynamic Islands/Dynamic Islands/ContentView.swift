@@ -26,6 +26,8 @@ struct ContentView: View {
                                 .swipeActions {
                                         Button("Start Live Activity") {
                                             island.startLiveActivity()
+                                            
+                                            // This could give you issues with App Review if used on the App Store.
                                             UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
                                         }
                                         .tint(.green)
