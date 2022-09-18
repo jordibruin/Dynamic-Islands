@@ -5,6 +5,8 @@ This repo aims to provide sample code for lots of different types of Live Activi
 
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/170948/190398276-91af47a8-239c-4190-8fef-3954bf4ac8fa.gif">
 
+If you want to play around with Swift Charts, check out the [📊 Swift Charts repo](https://github.com/jordibruin/Swift-Charts-Examples) as well!
+
 ## Todo
 - [ ] Add explanations of the different components
 - [ ] Add example that allows users to tap on objects and handle them
