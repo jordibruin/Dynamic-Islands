@@ -18,7 +18,7 @@ struct PhoneDetailView: View {
             
         }
         .navigationTitle(Island.phone.rawValue.capitalized)
-        .enableInjection()
+//        .enableInjection()
     }
     
     var activityPreview: some View {
@@ -40,6 +40,7 @@ struct PhoneDetailView: View {
         HStack {
             Button {
                 Island.phone.startLiveActivity()
+//                UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
             } label: {
                 Text("Start Live Activity")
             }

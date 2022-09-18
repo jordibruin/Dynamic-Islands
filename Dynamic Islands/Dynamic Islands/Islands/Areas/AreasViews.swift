@@ -11,7 +11,17 @@ import WidgetKit
 
 struct AreasCompactLeading: View {
     var body: some View {
-        Text("Leading")
+        ZStack {
+            Color.blue
+            Text("Leading")
+        }
+        
+        // Smaller area with width modifier
+//        ZStack {
+//            Color.blue
+//            Text("Leading")
+//        }
+//        .frame(width: 24)
     }
 }
 
@@ -50,7 +60,21 @@ struct AreasMinimal_Previews: PreviewProvider {
 //MARK: LEADING
 struct AreasLeading: View {
     var body: some View {
-        Text("Leading")
+        RoundedRectangle(cornerRadius: 20)
+//            .edgesIgnoringSafeArea(.all)
+            .frame(width: 200, height: 100)
+            .foregroundColor(.blue)
+        
+            // If you want your view to reach the side of the dynamic island you can use a negative padding
+            .padding(-20)
+        
+//        Circle()
+//            .edgesIgnoringSafeArea(.all)
+//            .frame(width: 200, height: 200)
+//            .foregroundColor(.purple)
+//
+//            // If you want your view to reach the side of the dynamic island you can use a negative padding
+//            .padding(-20)
     }
 }
 
@@ -65,7 +89,13 @@ struct AreasLeading_Previews: PreviewProvider {
 
 struct AreasTrailing: View {
     var body: some View {
-        Text("Trailing")
+        RoundedRectangle(cornerRadius: 20)
+//            .edgesIgnoringSafeArea(.all)
+            .frame(width: 200, height: 100)
+            .foregroundColor(.green)
+        
+            // If you want your view to reach the side of the dynamic island you can use a negative padding
+            .padding(-20)
     }
 }
 
@@ -78,7 +108,13 @@ struct AreasTrailing_Previews: PreviewProvider {
 //MARK: CENTER
 struct AreasCenter: View {
     var body: some View {
-        Text("Center")
+        RoundedRectangle(cornerRadius: 20)
+            .edgesIgnoringSafeArea(.all)
+            .frame(width: 200, height: 40)
+            .foregroundColor(.red)
+            .overlay(
+                    Text("Center")
+            )
     }
 }
 
@@ -91,7 +127,14 @@ struct AreasCenter_Previews: PreviewProvider {
 //MARK: BOTTOM
 struct AreasBottom: View {
     var body: some View {
-        Text("Bottom")
+        
+        RoundedRectangle(cornerRadius: 20)
+            .edgesIgnoringSafeArea(.all)
+            .frame(width: 200, height: 200)
+            .foregroundColor(.purple)
+            .overlay(
+                    Text("Bottom")
+            )
     }
 }
 

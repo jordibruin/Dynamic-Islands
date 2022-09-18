@@ -14,13 +14,13 @@
             filePath = "Dynamic Islands/ContentView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "71"
-            endingLineNumber = "71"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
             landmarkName = "checkActiveActivities()"
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "E8941F53-A97C-4CCA-9A68-DBC32415B1BC - 7cf9e7a983947623"
+                  uuid = "E8941F53-A97C-4CCA-9A68-DBC32415B1BC - 7cf9e7a983947684"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -30,12 +30,12 @@
                   urlString = "file:///Users/jordibruin/Developer/Dynamic%20Islands/Dynamic%20Islands/Dynamic%20Islands/ContentView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "71"
-                  endingLineNumber = "71"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
                   offsetFromSymbolStart = "96">
                </Location>
                <Location
-                  uuid = "E8941F53-A97C-4CCA-9A68-DBC32415B1BC - c1c6e9f9152b3b21"
+                  uuid = "E8941F53-A97C-4CCA-9A68-DBC32415B1BC - c1c6e9f9152b3b86"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -45,8 +45,8 @@
                   urlString = "file:///Users/jordibruin/Developer/Dynamic%20Islands/Dynamic%20Islands/Dynamic%20Islands/ContentView.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "71"
-                  endingLineNumber = "71"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76"
                   offsetFromSymbolStart = "136">
                </Location>
             </Locations>

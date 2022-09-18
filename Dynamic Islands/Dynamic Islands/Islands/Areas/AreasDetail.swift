@@ -14,7 +14,7 @@ struct AreasDetail: View {
             lifeCycle
             Spacer()
         }
-        .enableInjection()
+//        .enableInjection()
         .navigationTitle(Island.areas.rawValue.capitalized)
     }
     
@@ -38,6 +38,7 @@ struct AreasDetail: View {
         HStack {
             Button {
                 Island.areas.startLiveActivity()
+//                UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
             } label: {
                 Text("Start Live Activity")
             }
