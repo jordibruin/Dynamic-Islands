@@ -30,6 +30,12 @@ Recreation of the incoming phone call dynamic island
 
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/170948/190910714-3b94b3f3-2e02-4e86-a094-a3d60f78129b.png">
 
+Music
+
+Recreation of the now playing island
+<img width="400" alt="image" src="https://user-images.githubusercontent.com/170948/191253990-0008bcaa-384a-488e-9f13-8b6f6ccf8789.png">
+
+
 ### Generic
 
 Areas
