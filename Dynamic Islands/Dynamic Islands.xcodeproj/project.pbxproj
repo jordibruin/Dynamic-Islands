@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C22A2F2F28D9DF38000385FA /* MusicAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22A2F2B28D9DF38000385FA /* MusicAttributes.swift */; };
+		C22A2F3028D9DF38000385FA /* MusicAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22A2F2B28D9DF38000385FA /* MusicAttributes.swift */; };
+		C22A2F3128D9DF38000385FA /* MusicViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22A2F2C28D9DF38000385FA /* MusicViews.swift */; };
+		C22A2F3228D9DF38000385FA /* MusicViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22A2F2C28D9DF38000385FA /* MusicViews.swift */; };
+		C22A2F3328D9DF38000385FA /* MusicWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22A2F2D28D9DF38000385FA /* MusicWidget.swift */; };
+		C22A2F3428D9DF38000385FA /* MusicWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22A2F2D28D9DF38000385FA /* MusicWidget.swift */; };
+		C22A2F3528D9DF38000385FA /* MusicDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22A2F2E28D9DF38000385FA /* MusicDetail.swift */; };
+		C22A2F3628D9DF38000385FA /* MusicDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22A2F2E28D9DF38000385FA /* MusicDetail.swift */; };
+		C22A2F3728D9E0B5000385FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2CB4D2728D28808009D46AB /* Assets.xcassets */; };
 		C2870BDB28D33A22009C337C /* Island.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870BDA28D33A22009C337C /* Island.swift */; };
 		C2870BDF28D340E6009C337C /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = C2870BDE28D340E6009C337C /* Inject */; };
 		C2870BE428D343F6009C337C /* Inject in Frameworks */ = {isa = PBXBuildFile; productRef = C2870BE328D343F6009C337C /* Inject */; };
@@ -65,6 +74,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		C22A2F2B28D9DF38000385FA /* MusicAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicAttributes.swift; sourceTree = "<group>"; };
+		C22A2F2C28D9DF38000385FA /* MusicViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicViews.swift; sourceTree = "<group>"; };
+		C22A2F2D28D9DF38000385FA /* MusicWidget.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicWidget.swift; sourceTree = "<group>"; };
+		C22A2F2E28D9DF38000385FA /* MusicDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicDetail.swift; sourceTree = "<group>"; };
 		C2870BDA28D33A22009C337C /* Island.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Island.swift; sourceTree = "<group>"; };
 		C2870BF328D345CD009C337C /* PhoneDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneDetail.swift; sourceTree = "<group>"; };
 		C2870BFA28D34C23009C337C /* AreasDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreasDetail.swift; sourceTree = "<group>"; };
@@ -111,9 +124,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C22A2F2A28D9DF38000385FA /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				C22A2F2B28D9DF38000385FA /* MusicAttributes.swift */,
+				C22A2F2C28D9DF38000385FA /* MusicViews.swift */,
+				C22A2F2D28D9DF38000385FA /* MusicWidget.swift */,
+				C22A2F2E28D9DF38000385FA /* MusicDetail.swift */,
+			);
+			name = Music;
+			path = "Dynamic Islands/Islands/Music";
+			sourceTree = SOURCE_ROOT;
+		};
 		C2870BE528D344A9009C337C /* Islands */ = {
 			isa = PBXGroup;
 			children = (
+				C22A2F2A28D9DF38000385FA /* Music */,
 				C2870BF928D34C19009C337C /* Areas */,
 				C2870BE628D344AF009C337C /* Phone */,
 			);
@@ -310,6 +336,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C22A2F3728D9E0B5000385FA /* Assets.xcassets in Resources */,
 				C2CB4D4328D28BA1009D46AB /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -325,14 +352,18 @@
 				C2870C0728D34D86009C337C /* PhoneAttributes.swift in Sources */,
 				C2CB4D4628D28BA1009D46AB /* Dynamic_Islands_Widget.intentdefinition in Sources */,
 				C2870C0128D34D2F009C337C /* PhoneViews.swift in Sources */,
+				C22A2F2F28D9DF38000385FA /* MusicAttributes.swift in Sources */,
 				C2CB4D2628D28807009D46AB /* ContentView.swift in Sources */,
 				C2870BFE28D34C8C009C337C /* AreasViews.swift in Sources */,
+				C22A2F3328D9DF38000385FA /* MusicWidget.swift in Sources */,
 				C2870BF428D345CD009C337C /* PhoneDetail.swift in Sources */,
+				C22A2F3528D9DF38000385FA /* MusicDetail.swift in Sources */,
 				C2D1252D28D752F100DEBF6B /* AreasWidget.swift in Sources */,
 				C2870BDB28D33A22009C337C /* Island.swift in Sources */,
 				C2D1253028D7533400DEBF6B /* PhoneWidget.swift in Sources */,
 				C2870BFB28D34C23009C337C /* AreasDetail.swift in Sources */,
 				C2CB4D2428D28807009D46AB /* Dynamic_IslandsApp.swift in Sources */,
+				C22A2F3128D9DF38000385FA /* MusicViews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -343,10 +374,14 @@
 				C2870C0528D34D79009C337C /* AreasAttributes.swift in Sources */,
 				C2870C0828D34D86009C337C /* PhoneAttributes.swift in Sources */,
 				C2870BF628D34638009C337C /* Island.swift in Sources */,
+				C22A2F3228D9DF38000385FA /* MusicViews.swift in Sources */,
+				C22A2F3428D9DF38000385FA /* MusicWidget.swift in Sources */,
 				C2870C0228D34D2F009C337C /* PhoneViews.swift in Sources */,
 				C2870BFF28D34C8C009C337C /* AreasViews.swift in Sources */,
+				C22A2F3028D9DF38000385FA /* MusicAttributes.swift in Sources */,
 				C2D1253228D758E200DEBF6B /* PhoneDetail.swift in Sources */,
 				C2D1252E28D752F100DEBF6B /* AreasWidget.swift in Sources */,
+				C22A2F3628D9DF38000385FA /* MusicDetail.swift in Sources */,
 				C2D1253328D758E700DEBF6B /* AreasDetail.swift in Sources */,
 				C2CB4D4028D28BA0009D46AB /* Dynamic_Islands_Widget.swift in Sources */,
 				C2D1253128D7533400DEBF6B /* PhoneWidget.swift in Sources */,

@@ -55,6 +55,7 @@ struct PizzaDeliveryWidgets: WidgetBundle {
         if #available(iOS 16.1, *) {
             PhoneWidget()
             AreasWidget()
+            MusicWidget()
         }
     }
 }

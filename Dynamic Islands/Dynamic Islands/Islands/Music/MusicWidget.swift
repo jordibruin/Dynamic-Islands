@@ -9,10 +9,10 @@ import SwiftUI
 import ActivityKit
 import WidgetKit
 
-struct PhoneWidget: Widget {
+struct MusicWidget: Widget {
     var body: some WidgetConfiguration {
-        ActivityConfiguration(for: SimpleIslandAttributes.self) { context in
-            PhoneLockScreen(context: context)
+        ActivityConfiguration(for: MusicAttributes.self) { context in
+            MusicLockScreen(context: context)
         } dynamicIsland: { context in
             DynamicIsland {
                 DynamicIslandExpandedRegion(.leading, priority: 4) {

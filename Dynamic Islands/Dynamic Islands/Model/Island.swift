@@ -14,6 +14,7 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
     
     case phone
     case areas
+    case music
     
     var id: String {
         self.rawValue
@@ -59,6 +60,21 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
                 )
                 .clipShape(RoundedRectangle(cornerRadius: 20))
                 .frame(height: 80)
+        case .music:
+            RoundedRectangle(cornerRadius: 40)
+                .foregroundColor(.black)
+                .overlay(
+                    HStack {
+                        MusicLeading()
+                        Spacer()
+                        MusicTrailing()
+                    }
+                    .padding(.top, -4)
+                    .padding(.horizontal)
+                    .foregroundColor(.white)
+                )
+                .clipShape(RoundedRectangle(cornerRadius: 20))
+                .frame(height: 80)
         }
     }
     
@@ -69,6 +85,8 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
             PhoneDetailView()
         case .areas:
             AreasDetail()
+        case .music:
+            MusicDetailView()
         }
     }
     
@@ -78,6 +96,8 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
             return SimpleIslandAttributes(island: .phone)
         case .areas:
             return AreasIslandAttributes(island: .areas)
+        case .music:
+            return MusicAttributes(island: .music)
         }
     }
 
@@ -87,6 +107,8 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
             return false
         case .areas:
             return true
+        case .music:
+            return true
         }
     }
     
@@ -95,6 +117,8 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
         case .phone:
             return false
         case .areas:
+            return true
+        case .music:
             return true
         }
     }
@@ -106,6 +130,8 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
             PhoneLeading()
         case .areas:
             AreasLeading()
+        case .music:
+            MusicLeading()
         }
     }
     
@@ -116,6 +142,8 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
             PhoneTrailing()
         case .areas:
             AreasTrailing()
+        case .music:
+            MusicTrailing()
         }
     }
     
@@ -126,6 +154,8 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
             PhoneCenter()
         case .areas:
             AreasCenter()
+        case .music:
+            MusicCenter()
         }
     }
     
@@ -136,6 +166,8 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
             PhoneBottom()
         case .areas:
             AreasBottom()
+        case .music:
+            MusicBottom()
         }
     }
     
@@ -146,6 +178,8 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
             PhoneCompactLeading()
         case .areas:
             AreasCompactLeading()
+        case .music:
+            MusicCompactLeading()
         }
     }
     
@@ -156,6 +190,8 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
             PhoneCompactTrailing()
         case .areas:
             AreasCompactTrailing()
+        case .music:
+            MusicCompactTrailing()
         }
     }
     
@@ -166,6 +202,8 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
             PhoneMinimal()
         case .areas:
             AreasMinimal()
+        case .music:
+            MusicMinimal()
         }
     }
     
@@ -198,6 +236,18 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
             do {
                 _ = try Activity<AreasIslandAttributes>.request(
                     attributes: self.attributes as! AreasIslandAttributes,
+                    contentState: initialContentState,
+                    pushType: nil)
+                print("Starting live activity")
+            } catch (let error) {
+                print("Error requesting live activity \(error.localizedDescription)")
+            }
+        case .music:
+            let initialContentState = MusicAttributes.Status()
+
+            do {
+                _ = try Activity<MusicAttributes>.request(
+                    attributes: self.attributes as! MusicAttributes,
                     contentState: initialContentState,
                     pushType: nil)
                 print("Starting live activity")
