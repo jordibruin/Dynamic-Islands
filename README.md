@@ -33,6 +33,7 @@ Recreation of the incoming phone call dynamic island
 Music
 
 Recreation of the now playing island
+
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/170948/191253990-0008bcaa-384a-488e-9f13-8b6f6ccf8789.png">
 
 
