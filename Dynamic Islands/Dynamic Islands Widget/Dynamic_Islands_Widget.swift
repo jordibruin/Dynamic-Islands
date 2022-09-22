@@ -51,12 +51,9 @@ struct Dynamic_Islands_WidgetEntryView : View {
 @main
 struct PizzaDeliveryWidgets: WidgetBundle {
     var body: some Widget {
-        
-        if #available(iOS 16.1, *) {
-            PhoneWidget()
-            AreasWidget()
-            MusicWidget()
-        }
+        PhoneWidget()
+        AreasWidget()
+        MusicWidget()
     }
 }
 

@@ -12,13 +12,10 @@ struct PhoneDetailView: View {
     var body: some View {
         VStack {
             activityPreview
-            
-            lifeCycle
+//            lifeCycle
             Spacer()
-            
         }
         .navigationTitle(Island.phone.rawValue.capitalized)
-//        .enableInjection()
     }
     
     var activityPreview: some View {
@@ -26,9 +23,9 @@ struct PhoneDetailView: View {
             .foregroundColor(.black)
             .overlay(
                 HStack {
-                    Island.phone.leading
+//                    Island.phone.leading
                     Spacer()
-                    Island.phone.trailing
+//                    Island.phone.trailing
                 }
                 .padding(.horizontal, 12)
             )
@@ -39,7 +36,7 @@ struct PhoneDetailView: View {
     var lifeCycle: some View {
         HStack {
             Button {
-                Island.phone.startLiveActivity()
+//                Island.phone.startLiveActivity()
 //                UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
             } label: {
                 Text("Start Live Activity")
@@ -47,7 +44,7 @@ struct PhoneDetailView: View {
             .buttonStyle(.borderedProminent)
             
             Button {
-                Island.phone.stopLiveActivity()
+//                Island.phone.stopLiveActivity()
             } label: {
                 Text("Stop Live Activity")
             }

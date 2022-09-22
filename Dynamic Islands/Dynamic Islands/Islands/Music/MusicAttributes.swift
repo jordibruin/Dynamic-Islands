@@ -10,9 +10,7 @@ import ActivityKit
 
 @available(iOS 16.1, *)
 struct MusicAttributes: ActivityAttributes {
-    public typealias Status = ContentState
-    
     public struct ContentState: Codable, Hashable {}
-    
-    var island: Island
 }
+
+

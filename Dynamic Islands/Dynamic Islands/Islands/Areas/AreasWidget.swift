@@ -11,35 +11,31 @@ import WidgetKit
 
 struct AreasWidget: Widget {
     var body: some WidgetConfiguration {
-        ActivityConfiguration(for: AreasIslandAttributes.self) { context in
+        ActivityConfiguration(for: AreasAttributes.self) { context in
             AreasLockScreen(context: context)
         } dynamicIsland: { context in
             DynamicIsland {
                 DynamicIslandExpandedRegion(.leading, priority: 4) {
-                    Island.areas.leading
+                    AreasLeading()
                 }
 
                 DynamicIslandExpandedRegion(.trailing) {
-                    Island.areas.trailing
+                    AreasTrailing()
                 }
                 
                 DynamicIslandExpandedRegion(.center) {
-                    if Island.areas.hasCenter {
-                        Island.areas.center
-                    }
+                    AreasCenter()
                 }
             
                 DynamicIslandExpandedRegion(.bottom) {
-                    if Island.areas.hasBottom{
-                        Island.areas.bottom
-                    }
+                    AreasBottom()
                 }
             } compactLeading: {
-                Island.areas.compactLeading
+                AreasCompactLeading()
             } compactTrailing: {
-                Island.areas.compactTrailing
+                AreasCompactTrailing()
             } minimal: {
-                Island.areas.minimal
+                AreasMinimal()
             }
         }
     }

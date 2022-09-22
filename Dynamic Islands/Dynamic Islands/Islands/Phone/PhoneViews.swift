@@ -11,8 +11,8 @@ import WidgetKit
 
 struct PhoneCompactLeading: View {
     var body: some View {
-        Text("L")
-            
+        Image(systemName: "phone.fill")
+            .foregroundColor(.green)
     }
 }
 
@@ -24,7 +24,8 @@ struct PhoneCompactLeading_Previews: PreviewProvider {
 
 struct PhoneCompactTrailing: View {
     var body: some View {
-        Text("T")
+        Image(systemName: "phone.fill")
+            .foregroundColor(.green)
     }
 }
 
@@ -36,11 +37,11 @@ struct PhoneCompactTrailing_Previews: PreviewProvider {
 
 struct PhoneMinimal: View {
     var body: some View {
-        Image(systemName: "phone.circle.fill")
+        Image(systemName: "phone.fill")
             .foregroundColor(.green)
-            .font(.title2)
     }
 }
+
 
 struct PhoneMinimal_Previews: PreviewProvider {
     static var previews: some View {
@@ -50,6 +51,8 @@ struct PhoneMinimal_Previews: PreviewProvider {
 
 // MARK: LEADING
 struct PhoneLeading: View {
+    
+    let caller: String
     var body: some View {
         HStack {
             Circle()
@@ -60,7 +63,7 @@ struct PhoneLeading: View {
                 Text("iPhone")
                     .opacity(0.8)
                     .font(.caption)
-                Text("John AppleSeed")
+                Text(caller)
                     .font(.body)
                     .fontWeight(.medium)
             }
@@ -73,7 +76,7 @@ struct PhoneLeading: View {
 
 struct PhoneLeading_Previews: PreviewProvider {
     static var previews: some View {
-        PhoneLeading()
+        PhoneLeading(caller: "Jordi Bruin")
     }
 }
 
@@ -140,9 +143,14 @@ struct PhoneCenter_Previews: PreviewProvider {
 }
 
 struct PhoneLockScreen: View {
-    let context: ActivityViewContext<SimpleIslandAttributes>
+    let context: ActivityViewContext<PhoneAttributes>
     
     var body: some View {
-        Text("This is the live activity")
+        HStack {
+            Text("Credit card")
+            Text("This is the live activity")
+        }
+        .foregroundColor(.white)
+        .activityBackgroundTint(.purple)
     }
 }

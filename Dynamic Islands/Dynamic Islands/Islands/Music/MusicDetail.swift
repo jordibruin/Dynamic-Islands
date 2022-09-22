@@ -13,7 +13,7 @@ struct MusicDetailView: View {
         VStack {
             activityPreview
             
-            lifeCycle
+//            lifeCycle
             Spacer()
             
         }
@@ -26,9 +26,9 @@ struct MusicDetailView: View {
             .foregroundColor(.black)
             .overlay(
                 HStack {
-                    Island.music.leading
+//                    Island.music.leading
                     Spacer()
-                    Island.music.trailing
+//                    Island.music.trailing
                 }
                     .foregroundColor(.white)
                 // to compensate for extra padding we add to the top in the island
@@ -39,23 +39,23 @@ struct MusicDetailView: View {
             .frame(height: 80)
     }
     
-    var lifeCycle: some View {
-        HStack {
-            Button {
-                Island.music.startLiveActivity()
-//                UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
-            } label: {
-                Text("Start Live Activity")
-            }
-            .buttonStyle(.borderedProminent)
-            
-            Button {
-                Island.music.stopLiveActivity()
-            } label: {
-                Text("Stop Live Activity")
-            }
-            .buttonStyle(.borderedProminent)
-            .tint(.red)
-        }
-    }
+//    var lifeCycle: some View {
+//        HStack {
+//            Button {
+//                Island.music.startLiveActivity()
+////                UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
+//            } label: {
+//                Text("Start Live Activity")
+//            }
+//            .buttonStyle(.borderedProminent)
+//
+//            Button {
+//                Island.music.stopLiveActivity()
+//            } label: {
+//                Text("Stop Live Activity")
+//            }
+//            .buttonStyle(.borderedProminent)
+//            .tint(.red)
+//        }
+//    }
 }

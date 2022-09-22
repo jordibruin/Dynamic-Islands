@@ -9,10 +9,6 @@ import Foundation
 import ActivityKit
 
 @available(iOS 16.1, *)
-struct SimpleIslandAttributes: ActivityAttributes {
-    public typealias Status = ContentState
-    
+struct AreasAttributes: ActivityAttributes {
     public struct ContentState: Codable, Hashable {}
-    
-    var island: Island
 }

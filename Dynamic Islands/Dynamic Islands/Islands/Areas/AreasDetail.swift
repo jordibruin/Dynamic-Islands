@@ -11,7 +11,7 @@ struct AreasDetail: View {
     var body: some View {
         VStack {
             activityPreview
-            lifeCycle
+//            lifeCycle
             Spacer()
         }
 //        .enableInjection()
@@ -23,9 +23,9 @@ struct AreasDetail: View {
             .foregroundColor(.black)
             .overlay(
                 HStack {
-                    Island.areas.leading
+//                    Island.areas.leading
                     Spacer()
-                    Island.areas.trailing
+//                    Island.areas.trailing
                 }
                 .padding(.horizontal, 12)
                 .foregroundColor(.white)
@@ -37,7 +37,7 @@ struct AreasDetail: View {
     var lifeCycle: some View {
         HStack {
             Button {
-                Island.areas.startLiveActivity()
+//                Island.areas.startLiveActivity()
 //                UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
             } label: {
                 Text("Start Live Activity")
@@ -45,7 +45,7 @@ struct AreasDetail: View {
             .buttonStyle(.borderedProminent)
             
             Button {
-                Island.areas.stopLiveActivity()
+//                Island.areas.stopLiveActivity()
             } label: {
                 Text("Stop Live Activity")
             }

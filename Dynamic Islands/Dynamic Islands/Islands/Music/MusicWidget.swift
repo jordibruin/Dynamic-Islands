@@ -16,30 +16,30 @@ struct MusicWidget: Widget {
         } dynamicIsland: { context in
             DynamicIsland {
                 DynamicIslandExpandedRegion(.leading, priority: 4) {
-                    context.attributes.island.leading
+                    MusicLeading()
                 }
 
                 DynamicIslandExpandedRegion(.trailing) {
-                    context.attributes.island.trailing
+                    MusicTrailing()
                 }
                 
                 DynamicIslandExpandedRegion(.center) {
-                    if context.attributes.island.hasCenter {
-                        context.attributes.island.center
+                    if Island.music.hasCenter {
+                        MusicCenter()
                     }
                 }
             
                 DynamicIslandExpandedRegion(.bottom) {
-                    if context.attributes.island.hasBottom{
-                        context.attributes.island.bottom
+                    if Island.music.hasBottom{
+                        MusicBottom()
                     }
                 }
             } compactLeading: {
-                context.attributes.island.compactLeading
+                MusicCompactLeading()
             } compactTrailing: {
-                context.attributes.island.compactTrailing
+                MusicCompactTrailing()
             } minimal: {
-                context.attributes.island.minimal
+                MusicMinimal()
             }
             .keylineTint(.blue)
         

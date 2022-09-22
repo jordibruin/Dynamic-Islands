@@ -130,7 +130,7 @@ struct AreasBottom: View {
         
         RoundedRectangle(cornerRadius: 20)
             .edgesIgnoringSafeArea(.all)
-            .frame(width: 200, height: 200)
+            .frame(width: 300, height: 80)
             .foregroundColor(.purple)
             .overlay(
                     Text("Bottom")
@@ -147,7 +147,7 @@ struct AreasBottom_Previews: PreviewProvider {
 
 
 struct AreasLockScreen: View {
-    let context: ActivityViewContext<AreasIslandAttributes>
+    let context: ActivityViewContext<AreasAttributes>
     
     var body: some View {
         Text("This is the live activity")

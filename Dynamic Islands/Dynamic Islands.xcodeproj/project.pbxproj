@@ -30,6 +30,7 @@
 		C2870C0528D34D79009C337C /* AreasAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870C0328D34D79009C337C /* AreasAttributes.swift */; };
 		C2870C0728D34D86009C337C /* PhoneAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870C0628D34D86009C337C /* PhoneAttributes.swift */; };
 		C2870C0828D34D86009C337C /* PhoneAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2870C0628D34D86009C337C /* PhoneAttributes.swift */; };
+		C2AD4F5528DC508700B00AB3 /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AD4F5428DC508700B00AB3 /* LiveActivityManager.swift */; };
 		C2CB4D2428D28807009D46AB /* Dynamic_IslandsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CB4D2328D28807009D46AB /* Dynamic_IslandsApp.swift */; };
 		C2CB4D2628D28807009D46AB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CB4D2528D28807009D46AB /* ContentView.swift */; };
 		C2CB4D2828D28808009D46AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2CB4D2728D28808009D46AB /* Assets.xcassets */; };
@@ -85,6 +86,7 @@
 		C2870C0028D34D2F009C337C /* PhoneViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneViews.swift; sourceTree = "<group>"; };
 		C2870C0328D34D79009C337C /* AreasAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AreasAttributes.swift; sourceTree = "<group>"; };
 		C2870C0628D34D86009C337C /* PhoneAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAttributes.swift; sourceTree = "<group>"; };
+		C2AD4F5428DC508700B00AB3 /* LiveActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityManager.swift; sourceTree = "<group>"; };
 		C2CB4D2028D28807009D46AB /* Dynamic Islands.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Dynamic Islands.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2CB4D2328D28807009D46AB /* Dynamic_IslandsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic_IslandsApp.swift; sourceTree = "<group>"; };
 		C2CB4D2528D28807009D46AB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -139,9 +141,9 @@
 		C2870BE528D344A9009C337C /* Islands */ = {
 			isa = PBXGroup;
 			children = (
-				C22A2F2A28D9DF38000385FA /* Music */,
-				C2870BF928D34C19009C337C /* Areas */,
 				C2870BE628D344AF009C337C /* Phone */,
+				C2870BF928D34C19009C337C /* Areas */,
+				C22A2F2A28D9DF38000385FA /* Music */,
 			);
 			path = Islands;
 			sourceTree = "<group>";
@@ -201,6 +203,7 @@
 				C2CB4D3328D289E7009D46AB /* Dynamic-Islands-Info.plist */,
 				C2CB4D2328D28807009D46AB /* Dynamic_IslandsApp.swift */,
 				C2CB4D2528D28807009D46AB /* ContentView.swift */,
+				C2AD4F5428DC508700B00AB3 /* LiveActivityManager.swift */,
 				C2870BF828D34BF0009C337C /* Model */,
 				C2870BE528D344A9009C337C /* Islands */,
 				C2CB4D2728D28808009D46AB /* Assets.xcassets */,
@@ -354,6 +357,7 @@
 				C2870C0128D34D2F009C337C /* PhoneViews.swift in Sources */,
 				C22A2F2F28D9DF38000385FA /* MusicAttributes.swift in Sources */,
 				C2CB4D2628D28807009D46AB /* ContentView.swift in Sources */,
+				C2AD4F5528DC508700B00AB3 /* LiveActivityManager.swift in Sources */,
 				C2870BFE28D34C8C009C337C /* AreasViews.swift in Sources */,
 				C22A2F3328D9DF38000385FA /* MusicWidget.swift in Sources */,
 				C2870BF428D345CD009C337C /* PhoneDetail.swift in Sources */,
