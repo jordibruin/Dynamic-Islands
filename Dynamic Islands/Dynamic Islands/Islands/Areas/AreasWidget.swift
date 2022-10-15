@@ -18,15 +18,12 @@ struct AreasWidget: Widget {
                 DynamicIslandExpandedRegion(.leading, priority: 4) {
                     AreasLeading()
                 }
-
                 DynamicIslandExpandedRegion(.trailing) {
                     AreasTrailing()
                 }
-                
                 DynamicIslandExpandedRegion(.center) {
                     AreasCenter()
                 }
-            
                 DynamicIslandExpandedRegion(.bottom) {
                     AreasBottom()
                 }
