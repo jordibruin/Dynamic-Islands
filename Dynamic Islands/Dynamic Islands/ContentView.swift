@@ -7,25 +7,19 @@
 
 import SwiftUI
 import ActivityKit
+import WidgetKit
 //import Inject
 
-import WidgetKit
-
 struct ContentView: View {
-    
-    @State var selectedIsland: Island?
-    
-//    @ObserveInjection var inject
-    @StateObject var activityManager = LiveActivityManager()
+    @StateObject private var activityManager = LiveActivityManager()
+    //    @ObserveInjection var inject
     
     var body: some View {
         NavigationStack {
-            VStack {
-                
-                
-                List {
-                    ForEach(Island.allCases) { island in
-                        Section {
+            List {
+                ForEach(Island.allCases) { island in
+                    Section {
+                        VStack(alignment: .center) {
                             island.overviewView
                                 .swipeActions {
                                     Button("Start Live Activity") {
@@ -34,65 +28,33 @@ struct ContentView: View {
                                         UIControl().sendAction(#selector(URLSessionTask.suspend), to: UIApplication.shared, for: nil)
                                     }
                                     .tint(.green)
-                                    
+
                                     Button("Stop Live Activity") {
                                         activityManager.stopLiveActivity(island: island)
                                     }
                                     .tint(.red)
                                 }
-                            .listRowBackground(Color.clear)
-                            .listRowInsets(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 0))
+                            Text("^[\(activityManager.activeCount(island: island)) \("island")](inflect: true)")
+                                .foregroundStyle(.secondary)
                         }
+                        .listRowBackground(Color.clear)
+                        .listRowInsets(EdgeInsets(.zero))
                     }
                 }
-                
-                Text("\(activeIslands) active islands")
             }
-//            .toolbar(content: { toolbarItems })
             .navigationDestination(for: Island.self) { island in
                 island.detailView
             }
             .navigationTitle("🏝 Dynamic Islands")
-//            .onAppear {
-//                checkLiveActivities()
-//            }
-//            .onReceive(Timer.publish(every: 1, on: .main, in: .default).autoconnect()) { input in
-//                                   print("TIMER")
-//                checkLiveActivities()
-//            }
         }
         .statusBarHidden(true)
 //        .enableInjection()
     }
-    
-    
-    
-    
-    func checkLiveActivities() {
-        activeIslands = 0
-        for activity in Activity<MusicAttributes>.activities {
-            let _ = MusicAttributes.ContentState()
-            activeIslands += 1
-        }
-        
-        for activity in Activity<AreasAttributes>.activities {
-            let _ = AreasAttributes.ContentState()
-            activeIslands += 1
-        }
-        
-        for activity in Activity<PhoneAttributes>.activities {
-            let _ = PhoneAttributes.ContentState()
-            activeIslands += 1
-        }
-    }
-    
-    @State var activeIslands: Int = 0
-    
-    
+
 //    func startLiveActivity(for island: Island) {
 //        island.startLiveActivity()
 //    }
-    
+
 //    func checkActiveActivities() async {
 //        for await activity in Activity<SimpleIslandAttributes>.activityUpdates {
 //            print("Activity detais: \(activity.attributes)")

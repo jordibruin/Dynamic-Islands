@@ -9,11 +9,23 @@ import Foundation
 import ActivityKit
 
 class LiveActivityManager: ObservableObject {
-    @Published var phoneActivity: Activity<PhoneAttributes>?
-    @Published var areasActivity: Activity<AreasAttributes>?
-    @Published var musicActivity: Activity<MusicAttributes>?
-    
+    @Published var phoneActivity: [Activity<PhoneAttributes>] = []
+    @Published var areasActivity: [Activity<AreasAttributes>] = []
+    @Published var musicActivity: [Activity<MusicAttributes>] = []
+
+    func activeCount(island: Island) -> Int {
+        switch island {
+        case .phone:
+            return phoneActivity.filter { $0.activityState == .active }.count
+        case .areas:
+            return areasActivity.filter { $0.activityState == .active }.count
+        case .music:
+            return musicActivity.filter { $0.activityState == .active }.count
+        }
+    }
+
     // MARK: STARTING
+
     func startLiveActivity(island: Island) {
         switch island {
         case .phone:
@@ -26,6 +38,7 @@ class LiveActivityManager: ObservableObject {
     }
     
     // MARK: STOPPING
+
     func stopLiveActivity(island: Island) {
         switch island {
         case .phone:
@@ -55,7 +68,7 @@ class LiveActivityManager: ObservableObject {
                         contentState: state,
                         pushType: nil
                     )
-                    phoneActivity = activity
+                    phoneActivity.append(activity)
                 }
                 print("Started Phone Activity")
             } catch (let error) {
@@ -80,7 +93,7 @@ class LiveActivityManager: ObservableObject {
                         contentState: state,
                         pushType: nil
                     )
-                    areasActivity = activity
+                    areasActivity.append(activity)
                 }
                 print("Started Areas Activity")
             } catch (let error) {
@@ -105,7 +118,7 @@ class LiveActivityManager: ObservableObject {
                         contentState: state,
                         pushType: nil
                     )
-                    musicActivity = activity
+                    musicActivity.append(activity)
                 }
         
                 print("Started Music Activity")
@@ -114,31 +127,36 @@ class LiveActivityManager: ObservableObject {
             }
         }
     }
-    
-    
+
     func stopPhoneActivity() {
         Task {
-            await phoneActivity?.end(using: nil, dismissalPolicy: .immediate)
+            for activity in phoneActivity {
+                await activity.end(using: nil, dismissalPolicy: .immediate)
+            }
             await MainActor.run {
-                phoneActivity = nil
+                phoneActivity = []
             }
         }
     }
     
     func stopAreasActivity() {
         Task {
-            await areasActivity?.end(using: nil, dismissalPolicy: .immediate)
+            for activity in areasActivity {
+                await activity.end(using: nil, dismissalPolicy: .immediate)
+            }
             await MainActor.run {
-                areasActivity = nil
+                areasActivity = []
             }
         }
     }
     
     func stopMusicActivity() {
         Task {
-            await musicActivity?.end(using: nil, dismissalPolicy: .immediate)
+            for activity in musicActivity {
+                await activity.end(using: nil, dismissalPolicy: .immediate)
+            }
             await MainActor.run {
-                musicActivity = nil
+                musicActivity = []
             }
         }
     }

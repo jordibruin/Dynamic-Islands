@@ -36,9 +36,7 @@ struct PhoneWidget: Widget {
                 PhoneMinimal()
             }
             .keylineTint(.blue)
-        
         }
-        
     }
 }
 

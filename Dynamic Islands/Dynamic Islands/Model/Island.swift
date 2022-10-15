@@ -9,9 +9,7 @@ import Foundation
 import SwiftUI
 import ActivityKit
 
-
 enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
-    
     case phone
     case areas
     case music
@@ -45,7 +43,6 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
                         Rectangle()
                             .foregroundColor(.green)
                     }
-                        
                     .overlay(
                         RoundedRectangle(cornerRadius: 20)
                             .foregroundColor(.red)
@@ -54,7 +51,6 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
                     .overlay(
                         Text("Areas")
                     )
-                    
 //                    .padding(.horizontal, 12)
                     .foregroundColor(.white)
                 )
