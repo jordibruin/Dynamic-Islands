@@ -54,11 +54,10 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
                     .overlay(
                         Text("Areas")
                     )
-                    
 //                    .padding(.horizontal, 12)
                     .foregroundColor(.white)
                 )
-                .clipShape(RoundedRectangle(cornerRadius: 20))
+                .clipShape(RoundedRectangle(cornerRadius: 40))
                 .frame(height: 80)
         case .music:
             RoundedRectangle(cornerRadius: 40)
