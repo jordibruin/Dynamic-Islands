@@ -24,20 +24,17 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
     var overviewView: some View {
         switch self {
         case .phone:
-            RoundedRectangle(cornerRadius: 40)
-                .foregroundColor(.black)
+            commonBackground
                 .overlay(
                     HStack {
                         PhoneLeading(caller: "Jordi Bruin")
                         Spacer()
                         PhoneTrailing()
                     }
-                    .padding(.horizontal, 12)
+                    .padding(.horizontal, 15)
                 )
-                .frame(height: 80)
         case .areas:
-            RoundedRectangle(cornerRadius: 40)
-                .foregroundColor(.black)
+            commonBackground
                 .overlay(
                     HStack(spacing: 0) {
                         Rectangle()
@@ -45,36 +42,30 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
                         Rectangle()
                             .foregroundColor(.green)
                     }
-                        
+                    .clipShape(Capsule())
+                    .padding(3)
                     .overlay(
-                        RoundedRectangle(cornerRadius: 20)
+                        Capsule()
                             .foregroundColor(.red)
                             .frame(width: 100, height: 28)
+                            .overlay(
+                                Text("Areas")
+                                    .foregroundColor(.white)
+                            )
                     )
-                    .overlay(
-                        Text("Areas")
-                    )
-                    
-//                    .padding(.horizontal, 12)
-                    .foregroundColor(.white)
                 )
-                .clipShape(RoundedRectangle(cornerRadius: 20))
-                .frame(height: 80)
         case .music:
-            RoundedRectangle(cornerRadius: 40)
-                .foregroundColor(.black)
+            commonBackground
                 .overlay(
                     HStack {
                         MusicLeading()
                         Spacer()
                         MusicTrailing()
                     }
-                    .padding(.top, -4)
-                    .padding(.horizontal)
+                    .padding(.top, -7)
+                    .padding(.horizontal, 15)
                     .foregroundColor(.white)
                 )
-                .clipShape(RoundedRectangle(cornerRadius: 20))
-                .frame(height: 80)
         }
     }
     
@@ -110,6 +101,17 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
         case .music:
             return true
         }
+    }
+
+    private var commonBackground: some View {
+        Capsule()
+            .foregroundColor(.white.opacity(0.18))
+            .frame(height: 86)
+            .overlay(
+                Capsule()
+                    .foregroundColor(.black)
+                    .padding(3)
+            )
     }
 }
 
