@@ -68,7 +68,6 @@ struct PhoneLeading: View {
                     .fontWeight(.medium)
             }
             .fixedSize(horizontal: true, vertical: false)
-            .foregroundColor(.white)
         }
 //        .dynamicIsland(verticalPlacement: .belowIfTooWide)
     }
@@ -147,10 +146,10 @@ struct PhoneLockScreen: View {
     
     var body: some View {
         HStack {
-            Text("Credit card")
-            Text("This is the live activity")
+            PhoneLeading(caller: "Jordi Bruin")
+            Spacer()
+            PhoneTrailing()
         }
-        .foregroundColor(.white)
-        .activityBackgroundTint(.purple)
+        .padding()
     }
 }

@@ -143,6 +143,11 @@ struct MusicLockScreen: View {
     let context: ActivityViewContext<MusicAttributes>
     
     var body: some View {
-        Text("This is the music live activity")
+        HStack {
+            MusicLeading()
+            Spacer()
+            MusicTrailing()
+        }
+        .padding()
     }
 }
