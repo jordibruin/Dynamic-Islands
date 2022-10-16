@@ -31,7 +31,8 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
                         Spacer()
                         PhoneTrailing()
                     }
-                    .padding(.horizontal, 15)
+                    .padding(.horizontal, 12)
+                    .padding(2)
                 )
         case .areas:
             commonBackground
@@ -43,7 +44,6 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
                             .foregroundColor(.green)
                     }
                     .clipShape(Capsule())
-                    .padding(3)
                     .overlay(
                         Capsule()
                             .foregroundColor(.red)
@@ -53,6 +53,7 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
                                     .foregroundColor(.white)
                             )
                     )
+                    .padding(2)
                 )
         case .music:
             commonBackground
@@ -62,9 +63,10 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
                         Spacer()
                         MusicTrailing()
                     }
-                    .padding(.top, -7)
-                    .padding(.horizontal, 15)
+                    .padding(.top, -4)
+                    .padding(.horizontal, 12)
                     .foregroundColor(.white)
+                    .padding(2)
                 )
         }
     }
@@ -106,11 +108,11 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
     private var commonBackground: some View {
         Capsule()
             .foregroundColor(.white.opacity(0.18))
-            .frame(height: 86)
+            .frame(height: 84)
             .overlay(
                 Capsule()
                     .foregroundColor(.black)
-                    .padding(3)
+                    .padding(2)
             )
     }
 }
