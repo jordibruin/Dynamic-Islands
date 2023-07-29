@@ -44,3 +44,10 @@ Areas
 Overview of the different areas in an Expanded Dynamic Island view (Leading, Trailing, Center and Bottom)
 
 <img width="400" alt="image" src="https://user-images.githubusercontent.com/170948/190910689-a15c2568-9dd3-4c2a-9f9e-296d8aac4d63.png">
+
+## Other Example Repos
+Check out my other example repos
+
+[🪧 TipKit](https://github.com/jordibruin/TipKit-Examples)
+
+[📊 Swift Charts](https://github.com/jordibruin/Swift-Charts-Examples)
