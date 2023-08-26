@@ -22,7 +22,7 @@ struct MusicCompactTrailing: View {
     var body: some View {
         Image(systemName: "lines.measurement.horizontal")
             .font(.system(size: 12, weight: .heavy))
-            .foregroundColor(.yellow)
+            .foregroundStyle(LinearGradient(colors: [.orange, .white], startPoint: .top, endPoint: .bottom))
     }
 }
 
@@ -38,21 +38,19 @@ struct MusicMinimal: View {
 // MARK: LEADING
 struct MusicLeading: View {
     var body: some View {
-        HStack {
+        HStack(spacing: 20) {
             Image("albumart")
                 .resizable()
                 .frame(width: 62, height: 62)
-                .cornerRadius(18)
-            
+                .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
             VStack(alignment: .leading) {
                 Text("As it was")
                     .font(.system(.subheadline))
                     .bold()
                 Text("Harry Styles")
                     .font(.system(.subheadline))
-                    .opacity(0.8)
+                    .foregroundStyle(.secondary)
             }
-            .padding(.top, 8)
             .fixedSize(horizontal: true, vertical: false)
         }
         .padding(.top, 4)
@@ -66,7 +64,7 @@ struct MusicTrailing: View {
     var body: some View {
         Image(systemName: "lines.measurement.horizontal")
             .font(.system(size: 30, weight: .medium))
-            .foregroundColor(.yellow)
+            .foregroundStyle(LinearGradient(colors: [.orange, .white], startPoint: .top, endPoint: .bottom))
             .padding([.top, .trailing], 12)
     }
 }
@@ -76,7 +74,7 @@ struct MusicTrailing: View {
 
 struct MusicBottom: View {
     var body: some View {
-        VStack {
+        VStack(spacing: 0) {
             progress
             buttons
         }
@@ -87,10 +85,9 @@ struct MusicBottom: View {
             Text("00:23")
                 .font(.system(.caption))
                 .opacity(0.7)
-            
             ProgressView(value: 0.13, total: 1)
-                .tint(.white)
-            
+                .scaleEffect(x: 1, y: 1.5, anchor: .center)
+                .tint(Color(white: 0.5))
             Text("-02:43")
                 .font(.system(.caption))
                 .opacity(0.7)
@@ -100,34 +97,40 @@ struct MusicBottom: View {
     var buttons: some View {
         HStack {
             Spacer()
-            HStack {
-                
+            HStack(spacing: 40) {
                 Button {
-                    
                 } label: {
                     Image(systemName: "backward.fill")
+                        .font(.title2)
                 }
-                
                 Button {
-                    
                 } label: {
                     Image(systemName: "play.fill")
+                        .font(.largeTitle)
                 }
-                
                 Button {
-                    
                 } label: {
                     Image(systemName: "forward.fill")
+                        .font(.title2)
                 }
-                
             }
+            .tint(.white)
             .frame(width: 150)
-            
             Spacer()
         }
-        .font(.title)
-        .padding(.bottom, 4)
         .frame(height: 40)
+        .overlay {
+            HStack {
+                Spacer()
+                Button {
+                } label: {
+                    Image(systemName: "airplayaudio")
+                        .font(.title2)
+                }
+                .tint(.gray)
+                .padding()
+            }
+        }
     }
 }
 
