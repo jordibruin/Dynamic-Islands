@@ -9,149 +9,106 @@ import SwiftUI
 import ActivityKit
 import WidgetKit
 
+// MARK: - Leading
+
 struct AreasCompactLeading: View {
     var body: some View {
         ZStack {
             Color.blue
             Text("Leading")
         }
-        
         // Smaller area with width modifier
-//        ZStack {
-//            Color.blue
-//            Text("Leading")
-//        }
 //        .frame(width: 24)
     }
 }
 
-struct AreasCompactLeading_Previews: PreviewProvider {
-    static var previews: some View {
-        AreasCompactTrailing()
+struct AreasLeading: View {
+    var body: some View {
+        ZStack(alignment: .leading) {
+            Color.blue
+            Text("Leading")
+        }
+        .frame(width: 175, height: 60)
+        // If you want your view to reach the side of the dynamic island you can use a negative padding
+//        .padding(-20)
+    }
+}
+
+// MARK: - Trailing
+
+struct AreasTrailing: View {
+    var body: some View {
+        ZStack(alignment: .trailing) {
+            Color.green
+            Text("Trailing")
+        }
+        .frame(width: 175, height: 60)
+        // If you want your view to reach the side of the dynamic island you can use a negative padding
+//        .padding(-20)
     }
 }
 
 struct AreasCompactTrailing: View {
     var body: some View {
-        Text("Trailing")
+        ZStack {
+            Color.green
+            Text("Trailing")
+        }
     }
 }
 
-struct AreasCompactTrailing_Previews: PreviewProvider {
-    static var previews: some View {
-        AreasCompactTrailing()
-    }
-}
+// MARK: - Minimal
 
 struct AreasMinimal: View {
     var body: some View {
-        Image(systemName: "alert")
-            .foregroundColor(.green)
-            .font(.title2)
+        ZStack {
+            Color.orange
+            Text("Min")
+        }
     }
 }
 
-struct AreasMinimal_Previews: PreviewProvider {
-    static var previews: some View {
-        AreasMinimal()
-    }
-}
+// MARK: - Center
 
-//MARK: LEADING
-struct AreasLeading: View {
-    var body: some View {
-        RoundedRectangle(cornerRadius: 20)
-//            .edgesIgnoringSafeArea(.all)
-            .frame(width: 200, height: 100)
-            .foregroundColor(.blue)
-        
-            // If you want your view to reach the side of the dynamic island you can use a negative padding
-            .padding(-20)
-        
-//        Circle()
-//            .edgesIgnoringSafeArea(.all)
-//            .frame(width: 200, height: 200)
-//            .foregroundColor(.purple)
-//
-//            // If you want your view to reach the side of the dynamic island you can use a negative padding
-//            .padding(-20)
-    }
-}
-
-struct AreasLeading_Previews: PreviewProvider {
-    static var previews: some View {
-        AreasLeading()
-    }
-}
-
-
-//MARK: TRAILING
-
-struct AreasTrailing: View {
-    var body: some View {
-        RoundedRectangle(cornerRadius: 20)
-//            .edgesIgnoringSafeArea(.all)
-            .frame(width: 200, height: 100)
-            .foregroundColor(.green)
-        
-            // If you want your view to reach the side of the dynamic island you can use a negative padding
-            .padding(-20)
-    }
-}
-
-struct AreasTrailing_Previews: PreviewProvider {
-    static var previews: some View {
-        AreasTrailing()
-    }
-}
-
-//MARK: CENTER
 struct AreasCenter: View {
     var body: some View {
-        RoundedRectangle(cornerRadius: 20)
-            .edgesIgnoringSafeArea(.all)
-            .frame(width: 200, height: 40)
-            .foregroundColor(.red)
-            .overlay(
-                    Text("Center")
-            )
+        ZStack {
+            RoundedRectangle(cornerRadius: 20)
+                .foregroundColor(.red)
+                .frame(width: 100, height: 28)
+            Text("Center")
+        }
     }
 }
 
-struct AreasCenter_Previews: PreviewProvider {
-    static var previews: some View {
-        AreasCenter()
-    }
-}
+// MARK: - Bottom
 
-//MARK: BOTTOM
 struct AreasBottom: View {
     var body: some View {
-        
-        RoundedRectangle(cornerRadius: 20)
-            .edgesIgnoringSafeArea(.all)
-            .frame(width: 300, height: 80)
-            .foregroundColor(.purple)
-            .overlay(
-                    Text("Bottom")
-            )
+        ZStack {
+            Color.purple
+            Text("Bottom")
+        }
+        .frame(width: 350, height: 60)
     }
 }
 
-struct AreasBottom_Previews: PreviewProvider {
-    static var previews: some View {
-        AreasBottom()
-    }
-}
-
-
+// MARK: - Lock screen live activity
 
 struct AreasLockScreen: View {
     let context: ActivityViewContext<AreasAttributes>
     
     var body: some View {
-        Text("This is the live activity")
+        VStack {
+            HStack {
+                AreasLeading()
+                Spacer()
+                AreasTrailing()
+            }
+            .overlay {
+                AreasCenter()
+            }
+            AreasBottom()
+        }
     }
 }
-
-
