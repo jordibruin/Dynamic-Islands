@@ -57,7 +57,7 @@ struct AreasMinimal_Previews: PreviewProvider {
     }
 }
 
-//MARK: LEADING
+// MARK: LEADING
 struct AreasLeading: View {
     var body: some View {
         RoundedRectangle(cornerRadius: 20)
@@ -85,7 +85,7 @@ struct AreasLeading_Previews: PreviewProvider {
 }
 
 
-//MARK: TRAILING
+// MARK: TRAILING
 
 struct AreasTrailing: View {
     var body: some View {
@@ -105,7 +105,7 @@ struct AreasTrailing_Previews: PreviewProvider {
     }
 }
 
-//MARK: CENTER
+// MARK: CENTER
 struct AreasCenter: View {
     var body: some View {
         RoundedRectangle(cornerRadius: 20)
@@ -124,7 +124,7 @@ struct AreasCenter_Previews: PreviewProvider {
     }
 }
 
-//MARK: BOTTOM
+// MARK: BOTTOM
 struct AreasBottom: View {
     var body: some View {
         
