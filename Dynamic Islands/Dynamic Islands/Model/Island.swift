@@ -33,6 +33,7 @@ enum Island: String, CaseIterable, Identifiable, Hashable, Codable {
                         PhoneTrailing()
                     }
                     .padding(.horizontal, 12)
+                    .foregroundColor(.white)
                 )
                 .frame(height: 80)
         case .areas:
